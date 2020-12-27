@@ -13,9 +13,10 @@ class GCN(nn.Module):
     def forward(self, adj, x):
         h = self.linear1(x)
         h = torch.mm(adj, h)
+        # h = self.dropout(h)
         h = self.linear2(h)
         h = torch.mm(adj, h)
-        return h
+        return torch.sigmoid(h)
 
 
 class Encoder(nn.Module):
