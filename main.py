@@ -74,7 +74,7 @@ def main():
     parser.add_argument('--seed', type=int, default=0, help='random seed')
     parser.add_argument('--batch_size', type=int, default=32, help='batch size')
     parser.add_argument('--dropout', type=float, default=0.5, help='Dropout (default: 0.3)')
-    parser.add_argument('--weight_decay', type=float, default=0.3, help='weight decay (default: 0.3)')
+    parser.add_argument('--weight_decay', type=float, default=0.0, help='weight decay (default: 0.3)')
     parser.add_argument('--early_stop', type=int, default=5, help='early stop')
 
     args = parser.parse_args()
