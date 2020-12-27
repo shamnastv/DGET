@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 
 
 class GCN(nn.Module):
@@ -13,6 +14,7 @@ class GCN(nn.Module):
     def forward(self, adj, x):
         h = self.linear1(x)
         h = torch.mm(adj, h)
+        h = F.relu(h)
         h = self.dropout(h)
         h = self.linear2(h)
         h = torch.mm(adj, h)
