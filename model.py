@@ -24,15 +24,17 @@ class Encoder(nn.Module):
         self.features_enc = nn.Sequential(nn.Linear(dim, args.hidden_dim_enc_feat), nn.Sigmoid())
         self.adj_enc = nn.Sequential(nn.Linear(n, args.hidden_dim_enc_adj), nn.Sigmoid())
         self.gcn_enc = GCN(dim, args.hidden_dim_enc_feat, args.hidden_dim_enc_feat)
-        self.mu_layer = nn.Linear(args.hidden_dim_enc_feat + args.hidden_dim_enc_adj, args.hidden_dim)
-        self.var_layer = nn.Linear(args.hidden_dim_enc_feat + args.hidden_dim_enc_adj, args.hidden_dim)
+        self.mu_layer = nn.Linear(args.hidden_dim_enc_feat * 2 + args.hidden_dim_enc_adj, args.hidden_dim)
+        self.var_layer = nn.Linear(args.hidden_dim_enc_feat * 2 + args.hidden_dim_enc_adj, args.hidden_dim)
+        # self.mu_layer = nn.Linear(args.hidden_dim_enc_feat + args.hidden_dim_enc_adj, args.hidden_dim)
+        # self.var_layer = nn.Linear(args.hidden_dim_enc_feat + args.hidden_dim_enc_adj, args.hidden_dim)
 
     def forward(self, adj, features):
         features_h = self.features_enc(features)
         adj_h = self.adj_enc(adj)
         gcn_h = self.gcn_enc(adj, features)
-        # h = torch.cat((adj_h, features_h, gcn_h), dim=1)
-        h = torch.cat((adj_h, features_h), dim=1)
+        h = torch.cat((adj_h, features_h, gcn_h), dim=1)
+        # h = torch.cat((adj_h, features_h), dim=1)
         mu = self.mu_layer(h)
         var = self.var_layer(h)
 
