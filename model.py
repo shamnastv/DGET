@@ -55,6 +55,7 @@ class DGE(nn.Module):
 
     def forward(self, adj, features):
         mu, var = self.encoder(adj, features)
+        var = var ** 2
         z = mu + torch.exp(0.5 * var) * torch.randn_like(mu)
         adj_logit = torch.mm(z, z.t())
         feat_logits = self.feat_dec(z)
