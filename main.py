@@ -77,6 +77,8 @@ def main():
     parser.add_argument('--weight_decay', type=float, default=0.0, help='weight decay (default: 0.3)')
     parser.add_argument('--early_stop', type=int, default=5, help='early stop')
 
+    parser.add_argument('--add_gcn', action="store_true", help='Whether add_gcn')
+
     args = parser.parse_args()
 
     print(args, flush=True)
