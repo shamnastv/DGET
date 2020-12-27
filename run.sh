@@ -6,4 +6,5 @@
 #SBATCH --gres=gpu:1
 #SBATCH --partition=cl1_48h-1G
 
+python3 main.py
 python3 main.py --lr .0005
