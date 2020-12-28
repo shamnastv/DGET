@@ -7,4 +7,3 @@
 #SBATCH --partition=cl1_48h-1G
 
 python3 main.py --add_gcn
-python3 main.py --lr .0005 --add_gcn
