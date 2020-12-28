@@ -83,7 +83,7 @@ def main():
     parser.add_argument('--early_stop', type=int, default=5, help='early stop')
 
     parser.add_argument('--add_gcn', action="store_true", help='Whether add_gcn')
-    parser.add_argument('--alpha', type=float, default=100.0, help='alpha')
+    parser.add_argument('--alpha', type=float, default=150.0, help='alpha')
 
     args = parser.parse_args()
 
