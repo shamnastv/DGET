@@ -9,8 +9,9 @@ from sklearn.metrics import f1_score
 from sklearn.model_selection import train_test_split
 from sklearn.svm import LinearSVC
 
+from hyper_load_data import read_data
 from load_data import load_data
-from model import DGE
+from hyper_model import DGE
 
 
 def total_loss(args, mu, var, adj_logits, feat_logits, adj, features):
@@ -96,8 +97,8 @@ def main():
 
     print('device : ', device, flush=True)
 
-    adj, adj_norm, features, label = load_data(args.dataset)
-    model = DGE(args, features.shape[0], features.shape[1]).to(device)
+    adj, adj_norm, features, label = read_data(args.dataset)
+    model = DGE(args, adj.shape[1], features.shape[1]).to(device)
     optimizer = optim.Adam(model.parameters(), lr=1e-3, weight_decay=args.weight_decay)
 
     features = torch.from_numpy(features).float().to(device)
