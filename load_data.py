@@ -74,7 +74,7 @@ def load_data(dataset):
     label = read_label(dataset)
     adj, adj_norm = read_edgelist(dataset, n)
 
-    adj = adj_norm
+    # adj = adj_norm
     return adj, adj_norm, features, label
 
 
