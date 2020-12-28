@@ -21,7 +21,8 @@ def total_loss(mu, var, adj_logits, feat_logits, adj, features):
     adj_loss = n * F.binary_cross_entropy_with_logits(input=adj_logits, target=adj, pos_weight=pos_weight)
 
     feat_loss = torch.mean(torch.sum((feat_logits - features) ** 2, dim=-1))
-    print('Loss : KL:', kl_loss, ' ADJ :', adj_loss, 'FEAT :', feat_loss)
+    print('Loss : KL:', kl_loss.detach().cpu().item(), ' ADJ :', adj_loss.detach().cpu().item()
+          , 'FEAT :', feat_loss.detach().cpu().item())
     return kl_loss + adj_loss + feat_loss
 
 

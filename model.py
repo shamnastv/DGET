@@ -59,12 +59,12 @@ class DGE(nn.Module):
         self.encoder = Encoder(args, n, dim)
         self.feat_dec = nn.Sequential(nn.Linear(args.hidden_dim, args.hidden_dim_dec_feat),
                                       nn.Sigmoid(),
-                                      nn.Linear(args.hidden_dim_dec_feat, dim),)
+                                      nn.Linear(args.hidden_dim_dec_feat, dim))
 
     def forward(self, adj, features):
         mu, var = self.encoder(adj, features)
         var = var * 2
         z = mu + torch.exp(0.5 * var) * torch.randn_like(mu)
-        adj_logit = torch.sigmoid(torch.mm(z, z.t()))
+        adj_logit = torch.mm(z, z.t())
         feat_logits = self.feat_dec(z)
         return mu, var, adj_logit, feat_logits
