@@ -17,7 +17,8 @@ def total_loss(args, mu, var, adj_logits, feat_logits, adj, features):
     kl_loss = -0.5 * torch.mean(torch.sum(torch.tensor(1).float().to(var.device) + var - mu ** 2 - torch.exp(var), dim=-1))
 
     n = adj.shape[0]
-    pos_weight = (n * n - torch.sum(adj)) / torch.sum(adj)
+    pos = torch.sum(adj > 0.0)
+    pos_weight = (n * n - pos) / pos
     adj_loss = args.alpha * F.binary_cross_entropy_with_logits(adj_logits, adj, pos_weight=pos_weight)
     # adj_loss = 10 * F.mse_loss(adj_logits, adj)
 
