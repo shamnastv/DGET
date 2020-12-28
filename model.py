@@ -59,8 +59,7 @@ class DGE(nn.Module):
         self.encoder = Encoder(args, n, dim)
         self.feat_dec = nn.Sequential(nn.Linear(args.hidden_dim, args.hidden_dim_dec_feat),
                                       nn.Sigmoid(),
-                                      nn.Linear(args.hidden_dim_dec_feat, dim),
-                                      nn.Sigmoid())
+                                      nn.Linear(args.hidden_dim_dec_feat, dim),)
 
     def forward(self, adj, features):
         mu, var = self.encoder(adj, features)
