@@ -72,7 +72,7 @@ def main():
     parser.add_argument('--hidden_dim_dec_feat', type=int, default=128, help='hidden dimension')
 
     parser.add_argument('--num_layers', type=int, default=1, help='number of layers')
-    parser.add_argument('--epochs', type=int, default=2200, help='number of epochs to train (default: 100)')
+    parser.add_argument('--epochs', type=int, default=3000, help='number of epochs to train (default: 100)')
     parser.add_argument('--lr', type=float, default=1e-3, help='learning rate (default: 1e-4)')
     parser.add_argument('--seed', type=int, default=0, help='random seed')
     parser.add_argument('--batch_size', type=int, default=32, help='batch size')
@@ -103,7 +103,7 @@ def main():
     adj = torch.from_numpy(adj).float().to(device)
 
     max_macro, max_micro, max_accuracy = 0, 0, 0
-    for epoch in range(1, args.epochs):
+    for epoch in range(1, args.epochs + 1):
         train(model, optimizer, adj, adj_norm, features)
         if epoch % 20 == 0:
             macro, micro, accuracy = test(epoch, model, adj_norm, features, label)
