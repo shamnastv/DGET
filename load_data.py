@@ -1,4 +1,15 @@
 import numpy as np
+import scipy.sparse as sp
+
+
+def normalize(mx):
+    """Row-normalize sparse matrix"""
+    rowsum = np.array(mx.sum(1))
+    r_inv = np.power(rowsum, -1).flatten()
+    r_inv[np.isinf(r_inv)] = 0.
+    r_mat_inv = sp.diags(r_inv)
+    mx = r_mat_inv.dot(mx)
+    return mx
 
 
 def read_feature(filename):
@@ -34,7 +45,8 @@ def read_edgelist(filename, n):
             adj[j, i] = 1
 
     adj_norm = adj + np.identity(n)
-    adj_norm /= np.tile(np.mat(np.sum(adj_norm, axis=1)), (n, 1)).T
+    # adj_norm /= np.tile(np.mat(np.sum(adj_norm, axis=1)), (n, 1)).T
+    adj_norm = normalize(adj_norm)
 
     return adj, adj_norm
 
