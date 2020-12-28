@@ -4,13 +4,11 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 from mlxtend.evaluate import accuracy_score
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import f1_score
 from sklearn.model_selection import train_test_split
 from sklearn.svm import LinearSVC
 
 from hyper_load_data import read_data
-from load_data import load_data
 from hyper_model import DGE
 
 
@@ -23,7 +21,7 @@ def total_loss(args, mu, var, adj_logits, feat_logits, adj, features):
     adj_loss = args.alpha * F.binary_cross_entropy_with_logits(adj_logits, adj, pos_weight=pos_weight)
     # adj_loss = 10 * F.mse_loss(adj_logits, adj)
 
-    feat_loss = args.alpha * F.mse_loss(feat_logits, features)
+    feat_loss = F.mse_loss(feat_logits, features)
     # print('Loss : KL:', kl_loss.detach().cpu().item(), ' ADJ :', adj_loss.detach().cpu().item()
     #       , 'FEAT :', feat_loss.detach().cpu().item())
     return kl_loss + adj_loss + feat_loss
@@ -71,8 +69,8 @@ def main():
 
     parser.add_argument('--hidden_dim_enc_adj', type=int, default=512, help='hidden dimension')
     parser.add_argument('--hidden_dim_enc_feat', type=int, default=512, help='hidden dimension')
-    parser.add_argument('--hidden_dim', type=int, default=256, help='hidden dimension')
-    parser.add_argument('--hidden_dim_dec_feat', type=int, default=256, help='hidden dimension')
+    parser.add_argument('--hidden_dim', type=int, default=128, help='hidden dimension')
+    parser.add_argument('--hidden_dim_dec_feat', type=int, default=128, help='hidden dimension')
 
     parser.add_argument('--epochs', type=int, default=3000, help='number of epochs to train (default: 100)')
     parser.add_argument('--lr', type=float, default=1e-3, help='learning rate (default: 1e-4)')
