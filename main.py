@@ -19,10 +19,11 @@ def total_loss(args, mu, var, adj_logits, feat_logits, adj, features):
     n = adj.shape[0]
     pos_weight = (n * n - torch.sum(adj)) / torch.sum(adj)
     adj_loss = args.alpha * F.binary_cross_entropy_with_logits(adj_logits, adj, pos_weight=pos_weight)
+    # adj_loss = 10 * F.mse_loss(adj_logits, adj)
 
     feat_loss = 10 * F.mse_loss(feat_logits, features)
-    # print('Loss : KL:', kl_loss.detach().cpu().item(), ' ADJ :', adj_loss.detach().cpu().item()
-    #       , 'FEAT :', feat_loss.detach().cpu().item())
+    print('Loss : KL:', kl_loss.detach().cpu().item(), ' ADJ :', adj_loss.detach().cpu().item()
+          , 'FEAT :', feat_loss.detach().cpu().item())
     return kl_loss + adj_loss + feat_loss
 
 
@@ -63,7 +64,7 @@ def test(epoch, model, adj_norm, features, label):
 
 def main():
     parser = argparse.ArgumentParser(description='Torch for DGE')
-    parser.add_argument("--dataset", type=str, default="cora", help="dataset name")
+    parser.add_argument("--dataset", type=str, default="citeseer", help="dataset name")
     parser.add_argument('--device', type=int, default=0, help='which gpu to use if any (default: 0)')
 
     parser.add_argument('--hidden_dim_enc_adj', type=int, default=512, help='hidden dimension')

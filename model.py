@@ -61,10 +61,16 @@ class DGE(nn.Module):
                                       nn.Sigmoid(),
                                       nn.Linear(args.hidden_dim_dec_feat, dim))
 
+        # self.adj_dec = nn.Sequential(nn.Linear(n, args.hidden_dim_dec_feat),
+        #                              nn.Sigmoid(),
+        #                              nn.Linear(args.hidden_dim_dec_feat, n))
+        # self.adj_dec = nn.Linear(n, n)
+
     def forward(self, adj, features):
         mu, var = self.encoder(adj, features)
         var = var * 2
         z = mu + torch.exp(0.5 * var) * torch.randn_like(mu)
         adj_logit = torch.mm(z, z.t())
+        # adj_logit = self.adj_dec(torch.mm(z, z.t()))
         feat_logits = self.feat_dec(z)
         return mu, var, adj_logit, feat_logits
