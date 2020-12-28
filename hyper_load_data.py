@@ -1,17 +1,52 @@
 import copy
+import pickle
 
 import scipy.io as sio
 import scipy.sparse as sp
 import numpy as np
 
 
+def read_data(dataset):
+    edgelist_path = './hyper_datasets/' + dataset + '/' + 'hypergraph.pickle'
+    label_path = './hyper_datasets/' + dataset + '/' + 'labels.pickle'
+    content_path = './hyper_datasets/' + dataset + '/' + 'features.pickle'
+    with open(edgelist_path, 'rb') as handle:
+        hyper_graph = pickle.load(handle)
+    with open(label_path, 'rb') as handle:
+        labelset = pickle.load(handle)
+    with open(content_path, 'rb') as handle:
+        contentset = pickle.load(handle).todense()
+    hyper_edge_list = list(hyper_graph.values())
+
+    labelset = np.array(labelset)
+    no_of_nodes = labelset.shape[0]
+    no_of_edges = len(hyper_edge_list)
+    hyper_incidence_matrix = np.zeros((no_of_nodes, no_of_edges))
+    for i in range(len(hyper_edge_list)):
+        for node in hyper_edge_list[i]:
+            hyper_incidence_matrix[node][i] = 1
+
+    hyper_incidence_matrix = sp.coo_matrix(hyper_incidence_matrix)
+    hyper_incidence_matrix = normalize(hyper_incidence_matrix).todense()
+
+    return hyper_incidence_matrix, hyper_incidence_matrix, contentset, labelset
+
+
 def normalize(mx):
     """Row-normalize sparse matrix"""
     rowsum = np.array(mx.sum(1))
-    r_inv = np.power(rowsum, -1).flatten()
-    r_inv[np.isinf(r_inv)] = 0.
-    r_mat_inv = sp.diags(r_inv)
-    mx = r_mat_inv.dot(mx)
+    colsum = np.array(mx.sum(0))
+
+    r_inv_sqrt = np.power(rowsum, -0.5).flatten()
+    r_inv_sqrt[np.isinf(r_inv_sqrt)] = 0.
+    r_mat_inv_sqrt = sp.diags(r_inv_sqrt)
+
+    c_inv_sqrt = np.power(colsum, -1).flatten()
+    c_inv_sqrt[np.isinf(c_inv_sqrt)] = 0.
+    c_mat_inv_sqrt = sp.diags(c_inv_sqrt)
+
+    mx = r_mat_inv_sqrt.dot(mx).dot(c_mat_inv_sqrt).dot(mx.transpose()).dot(r_mat_inv_sqrt)
+
     return mx
 
 
@@ -101,7 +136,7 @@ def load_data(dataset):
 
 
 def main():
-    adj, adj_norm, features, label = load_data('wiki')
+    adj, adj_norm, features, label = read_data('cora')
     print(adj.shape)
     print(adj_norm.shape)
     print(features.shape)
