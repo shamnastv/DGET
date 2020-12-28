@@ -10,7 +10,6 @@ def read_feature(filename):
             features.append(list(map(float, line.strip('\n').split(' '))))
 
         features = np.array(features, dtype=np.float)
-
         return features, n, d
 
 

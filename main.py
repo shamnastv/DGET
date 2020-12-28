@@ -54,7 +54,6 @@ def test(epoch, model, adj_norm, features, label):
     micro = f1_score(y_pred, test_y, average='micro')
     accuracy = accuracy_score(test_y, y_pred)
     print('Test : Macro:{:.4f} Micro:{:.4f} Acc:{:.4f}'.format(macro, micro, accuracy))
-    print(' ', flush=True)
     return macro, micro, accuracy
 
 
@@ -99,10 +98,16 @@ def main():
     adj_norm = torch.from_numpy(adj_norm).float().to(device)
     adj = torch.from_numpy(adj).float().to(device)
 
+    max_macro, max_micro, max_accuracy = 0, 0, 0
     for epoch in range(1, args.epochs):
         train(model, optimizer, adj, adj_norm, features)
         if epoch % 20 == 0:
-            test(epoch, model, adj_norm, features, label)
+            macro, micro, accuracy = test(epoch, model, adj_norm, features, label)
+            max_macro = max(macro, max_macro)
+            max_micro = max(micro, max_micro)
+            max_accuracy = max(accuracy, max_accuracy)
+            print('maxes :', max_macro, max_micro, max_accuracy)
+            print('', flush=True)
 
 
 if __name__ == '__main__':
