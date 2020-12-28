@@ -13,23 +13,23 @@ from load_data import load_data
 from model import DGE
 
 
-def total_loss(mu, var, adj_logits, feat_logits, adj, features):
+def total_loss(args, mu, var, adj_logits, feat_logits, adj, features):
     kl_loss = -0.5 * torch.mean(torch.sum(torch.tensor(1).float().to(var.device) + var - mu ** 2 - torch.exp(var), dim=-1))
 
     n = adj.shape[0]
     pos_weight = (n * n - torch.sum(adj)) / torch.sum(adj)
-    adj_loss = 100 * F.binary_cross_entropy_with_logits(input=adj_logits, target=adj, pos_weight=pos_weight)
+    adj_loss = args.alpha * F.binary_cross_entropy_with_logits(input=adj_logits, target=adj, pos_weight=pos_weight)
 
     feat_loss = torch.mean(torch.sum((feat_logits - features) ** 2, dim=-1))
-    print('Loss : KL:', kl_loss.detach().cpu().item(), ' ADJ :', adj_loss.detach().cpu().item()
-          , 'FEAT :', feat_loss.detach().cpu().item())
+    # print('Loss : KL:', kl_loss.detach().cpu().item(), ' ADJ :', adj_loss.detach().cpu().item()
+    #       , 'FEAT :', feat_loss.detach().cpu().item())
     return kl_loss + adj_loss + feat_loss
 
 
-def train(model, optimizer, adj, adj_norm, features):
+def train(args, model, optimizer, adj, adj_norm, features):
     mu, var, adj_logits, feat_logits = model(adj_norm, features)
 
-    loss = total_loss(mu, var, adj_logits, feat_logits, adj, features)
+    loss = total_loss(args, mu, var, adj_logits, feat_logits, adj, features)
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
@@ -81,6 +81,7 @@ def main():
     parser.add_argument('--early_stop', type=int, default=5, help='early stop')
 
     parser.add_argument('--add_gcn', action="store_true", help='Whether add_gcn')
+    parser.add_argument('--alpha', type=float, default=100.0, help='alpha')
 
     args = parser.parse_args()
 
@@ -104,7 +105,7 @@ def main():
 
     max_macro, max_micro, max_accuracy = 0, 0, 0
     for epoch in range(1, args.epochs + 1):
-        train(model, optimizer, adj, adj_norm, features)
+        train(args, model, optimizer, adj, adj_norm, features)
         if epoch % 20 == 0:
             macro, micro, accuracy = test(epoch, model, adj_norm, features, label)
             max_macro = max(macro, max_macro)
