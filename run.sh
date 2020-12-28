@@ -6,4 +6,4 @@
 #SBATCH --gres=gpu:1
 #SBATCH --partition=cl1_48h-1G
 
-python3 main.py --alpha 200
+python3 main.py --weight_deacy .1

@@ -17,8 +17,8 @@ def total_loss(args, mu, var, adj_logits, feat_logits, adj, features):
     kl_loss = -0.5 * torch.mean(torch.sum(torch.tensor(1).float().to(var.device) + var - mu ** 2 - torch.exp(var), dim=-1))
 
     n = adj.shape[0]
-    pos_weight = (n * n - torch.sum(adj)) / torch.sum(adj) * 5
-    adj_loss = args.alpha * F.binary_cross_entropy_with_logits(input=adj_logits, target=adj, pos_weight=pos_weight)
+    pos_weight = (n * n - torch.sum(adj)) / torch.sum(adj)
+    adj_loss = args.alpha * F.binary_cross_entropy_with_logits(adj_logits, adj, pos_weight=pos_weight)
 
     feat_loss = 10 * F.mse_loss(feat_logits, features)
     # print('Loss : KL:', kl_loss.detach().cpu().item(), ' ADJ :', adj_loss.detach().cpu().item()
