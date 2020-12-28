@@ -1,0 +1,1490 @@
+Namespace(add_gcn=True, batch_size=32, dataset='citeseer', device=0, dropout=0.5, early_stop=5, epochs=2200, hidden_dim=128, hidden_dim_dec_feat=128, hidden_dim_enc_adj=512, hidden_dim_enc_feat=512, lr=0.001, num_layers=1, seed=0, weight_decay=0.0)
+device :  cuda:0
+Epoch : 20
+Train : Macro:0.4565 Micro:0.5599 Acc:0.5599
+Test : Macro:0.4123 Micro:0.5101 Acc:0.5101
+maxes : 0.4123443110099681 0.5101336783096162 0.5101336783096162
+
+Epoch : 40
+Train : Macro:0.4803 Micro:0.5861 Acc:0.5861
+Test : Macro:0.4443 Micro:0.5382 Acc:0.5382
+maxes : 0.44429927525005697 0.538163001293661 0.538163001293661
+
+Epoch : 60
+Train : Macro:0.4883 Micro:0.5831 Acc:0.5831
+Test : Macro:0.4647 Micro:0.5511 Acc:0.5511
+maxes : 0.46467083903168493 0.5510996119016818 0.5510996119016818
+
+Epoch : 80
+Train : Macro:0.5163 Micro:0.6083 Acc:0.6083
+Test : Macro:0.4945 Micro:0.5774 Acc:0.5774
+maxes : 0.49445957568900417 0.5774040534713238 0.5774040534713238
+
+Epoch : 100
+Train : Macro:0.5416 Micro:0.6334 Acc:0.6334
+Test : Macro:0.5178 Micro:0.6020 Acc:0.6020
+maxes : 0.5178000841601783 0.6019836136265632 0.6019836136265632
+
+Epoch : 120
+Train : Macro:0.5553 Micro:0.6485 Acc:0.6485
+Test : Macro:0.5198 Micro:0.6054 Acc:0.6054
+maxes : 0.5198295319715557 0.6054333764553687 0.6054333764553687
+
+Epoch : 140
+Train : Macro:0.5683 Micro:0.6616 Acc:0.6616
+Test : Macro:0.5296 Micro:0.6149 Acc:0.6149
+maxes : 0.5296150700385055 0.6149202242345839 0.6149202242345839
+
+Epoch : 160
+Train : Macro:0.5715 Micro:0.6657 Acc:0.6657
+Test : Macro:0.5431 Micro:0.6274 Acc:0.6274
+maxes : 0.5430812496922409 0.6274256144890039 0.6274256144890039
+
+Epoch : 180
+Train : Macro:0.5843 Micro:0.6798 Acc:0.6798
+Test : Macro:0.5530 Micro:0.6386 Acc:0.6386
+maxes : 0.553004370691067 0.6386373436826218 0.6386373436826218
+
+Epoch : 200
+Train : Macro:0.5983 Micro:0.6969 Acc:0.6969
+Test : Macro:0.5627 Micro:0.6516 Acc:0.6516
+maxes : 0.5627301470847733 0.6515739542906425 0.6515739542906425
+
+Epoch : 220
+Train : Macro:0.6144 Micro:0.7080 Acc:0.7080
+Test : Macro:0.5676 Micro:0.6516 Acc:0.6516
+maxes : 0.5676223058286745 0.6515739542906425 0.6515739542906425
+
+Epoch : 240
+Train : Macro:0.6171 Micro:0.7100 Acc:0.7100
+Test : Macro:0.5727 Micro:0.6576 Acc:0.6576
+maxes : 0.5726771413482594 0.6576110392410521 0.6576110392410521
+
+Epoch : 260
+Train : Macro:0.6194 Micro:0.7130 Acc:0.7130
+Test : Macro:0.5690 Micro:0.6516 Acc:0.6516
+maxes : 0.5726771413482594 0.6576110392410521 0.6576110392410521
+
+Epoch : 280
+Train : Macro:0.6281 Micro:0.7170 Acc:0.7170
+Test : Macro:0.5795 Micro:0.6602 Acc:0.6602
+maxes : 0.5795394723331714 0.6601983613626563 0.6601983613626563
+
+Epoch : 300
+Train : Macro:0.6335 Micro:0.7231 Acc:0.7231
+Test : Macro:0.5785 Micro:0.6632 Acc:0.6632
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 320
+Train : Macro:0.6289 Micro:0.7190 Acc:0.7190
+Test : Macro:0.5734 Micro:0.6598 Acc:0.6598
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 340
+Train : Macro:0.6149 Micro:0.7100 Acc:0.7100
+Test : Macro:0.5670 Micro:0.6533 Acc:0.6533
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 360
+Train : Macro:0.6160 Micro:0.7100 Acc:0.7100
+Test : Macro:0.5693 Micro:0.6537 Acc:0.6537
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 380
+Train : Macro:0.6129 Micro:0.7069 Acc:0.7069
+Test : Macro:0.5675 Micro:0.6516 Acc:0.6516
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 400
+Train : Macro:0.6104 Micro:0.7039 Acc:0.7039
+Test : Macro:0.5678 Micro:0.6503 Acc:0.6503
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 420
+Train : Macro:0.6109 Micro:0.7049 Acc:0.7049
+Test : Macro:0.5690 Micro:0.6537 Acc:0.6537
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 440
+Train : Macro:0.6097 Micro:0.7039 Acc:0.7039
+Test : Macro:0.5639 Micro:0.6481 Acc:0.6481
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 460
+Train : Macro:0.6107 Micro:0.7049 Acc:0.7049
+Test : Macro:0.5685 Micro:0.6533 Acc:0.6533
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 480
+Train : Macro:0.6118 Micro:0.7059 Acc:0.7059
+Test : Macro:0.5683 Micro:0.6529 Acc:0.6529
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 500
+Train : Macro:0.6127 Micro:0.7069 Acc:0.7069
+Test : Macro:0.5679 Micro:0.6524 Acc:0.6524
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 520
+Train : Macro:0.6142 Micro:0.7090 Acc:0.7090
+Test : Macro:0.5664 Micro:0.6511 Acc:0.6511
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 540
+Train : Macro:0.6162 Micro:0.7110 Acc:0.7110
+Test : Macro:0.5714 Micro:0.6563 Acc:0.6563
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 560
+Train : Macro:0.6145 Micro:0.7090 Acc:0.7090
+Test : Macro:0.5692 Micro:0.6542 Acc:0.6542
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 580
+Train : Macro:0.6193 Micro:0.7140 Acc:0.7140
+Test : Macro:0.5676 Micro:0.6524 Acc:0.6524
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 600
+Train : Macro:0.6187 Micro:0.7130 Acc:0.7130
+Test : Macro:0.5678 Micro:0.6524 Acc:0.6524
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 620
+Train : Macro:0.6204 Micro:0.7150 Acc:0.7150
+Test : Macro:0.5673 Micro:0.6533 Acc:0.6533
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 640
+Train : Macro:0.6180 Micro:0.7120 Acc:0.7120
+Test : Macro:0.5648 Micro:0.6507 Acc:0.6507
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 660
+Train : Macro:0.6154 Micro:0.7090 Acc:0.7090
+Test : Macro:0.5615 Micro:0.6473 Acc:0.6473
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 680
+Train : Macro:0.6157 Micro:0.7100 Acc:0.7100
+Test : Macro:0.5622 Micro:0.6481 Acc:0.6481
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 700
+Train : Macro:0.6121 Micro:0.7049 Acc:0.7049
+Test : Macro:0.5611 Micro:0.6468 Acc:0.6468
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 720
+Train : Macro:0.6076 Micro:0.6999 Acc:0.6999
+Test : Macro:0.5590 Micro:0.6447 Acc:0.6447
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 740
+Train : Macro:0.6077 Micro:0.6999 Acc:0.6999
+Test : Macro:0.5566 Micro:0.6417 Acc:0.6417
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 760
+Train : Macro:0.6058 Micro:0.6979 Acc:0.6979
+Test : Macro:0.5569 Micro:0.6442 Acc:0.6442
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 780
+Train : Macro:0.6108 Micro:0.7029 Acc:0.7029
+Test : Macro:0.5521 Micro:0.6382 Acc:0.6382
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 800
+Train : Macro:0.6115 Micro:0.7039 Acc:0.7039
+Test : Macro:0.5512 Micro:0.6373 Acc:0.6373
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 820
+Train : Macro:0.6088 Micro:0.7009 Acc:0.7009
+Test : Macro:0.5507 Micro:0.6365 Acc:0.6365
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 840
+Train : Macro:0.6027 Micro:0.6989 Acc:0.6989
+Test : Macro:0.5512 Micro:0.6373 Acc:0.6373
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 860
+Train : Macro:0.5999 Micro:0.6959 Acc:0.6959
+Test : Macro:0.5525 Micro:0.6386 Acc:0.6386
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 880
+Train : Macro:0.5978 Micro:0.6989 Acc:0.6989
+Test : Macro:0.5499 Micro:0.6356 Acc:0.6356
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 900
+Train : Macro:0.5976 Micro:0.6989 Acc:0.6989
+Test : Macro:0.5497 Micro:0.6356 Acc:0.6356
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 920
+Train : Macro:0.5953 Micro:0.6969 Acc:0.6969
+Test : Macro:0.5493 Micro:0.6352 Acc:0.6352
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 940
+Train : Macro:0.6030 Micro:0.6999 Acc:0.6999
+Test : Macro:0.5495 Micro:0.6356 Acc:0.6356
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 960
+Train : Macro:0.5991 Micro:0.6959 Acc:0.6959
+Test : Macro:0.5458 Micro:0.6313 Acc:0.6313
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+Epoch : 980
+Train : Macro:0.5954 Micro:0.6969 Acc:0.6969
+Test : Macro:0.5463 Micro:0.6317 Acc:0.6317
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1000
+Train : Macro:0.5973 Micro:0.6989 Acc:0.6989
+Test : Macro:0.5439 Micro:0.6309 Acc:0.6309
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1020
+Train : Macro:0.6014 Micro:0.6989 Acc:0.6989
+Test : Macro:0.5479 Micro:0.6335 Acc:0.6335
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1040
+Train : Macro:0.5986 Micro:0.6959 Acc:0.6959
+Test : Macro:0.5450 Micro:0.6304 Acc:0.6304
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1060
+Train : Macro:0.5942 Micro:0.6959 Acc:0.6959
+Test : Macro:0.5423 Micro:0.6274 Acc:0.6274
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1080
+Train : Macro:0.5949 Micro:0.6969 Acc:0.6969
+Test : Macro:0.5428 Micro:0.6296 Acc:0.6296
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1100
+Train : Macro:0.5900 Micro:0.6918 Acc:0.6918
+Test : Macro:0.5422 Micro:0.6292 Acc:0.6292
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1120
+Train : Macro:0.5880 Micro:0.6898 Acc:0.6898
+Test : Macro:0.5413 Micro:0.6283 Acc:0.6283
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1140
+Train : Macro:0.5871 Micro:0.6878 Acc:0.6878
+Test : Macro:0.5410 Micro:0.6279 Acc:0.6279
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1160
+Train : Macro:0.5923 Micro:0.6888 Acc:0.6888
+Test : Macro:0.5395 Micro:0.6261 Acc:0.6261
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1180
+Train : Macro:0.5954 Micro:0.6878 Acc:0.6878
+Test : Macro:0.5418 Micro:0.6270 Acc:0.6270
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1200
+Train : Macro:0.5924 Micro:0.6888 Acc:0.6888
+Test : Macro:0.5356 Micro:0.6218 Acc:0.6218
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1220
+Train : Macro:0.5922 Micro:0.6888 Acc:0.6888
+Test : Macro:0.5340 Micro:0.6205 Acc:0.6205
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1240
+Train : Macro:0.5861 Micro:0.6868 Acc:0.6868
+Test : Macro:0.5357 Micro:0.6227 Acc:0.6227
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1260
+Train : Macro:0.5876 Micro:0.6838 Acc:0.6838
+Test : Macro:0.5353 Micro:0.6218 Acc:0.6218
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1280
+Train : Macro:0.5894 Micro:0.6858 Acc:0.6858
+Test : Macro:0.5349 Micro:0.6218 Acc:0.6218
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1300
+Train : Macro:0.5912 Micro:0.6878 Acc:0.6878
+Test : Macro:0.5360 Micro:0.6231 Acc:0.6231
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1320
+Train : Macro:0.5883 Micro:0.6848 Acc:0.6848
+Test : Macro:0.5349 Micro:0.6218 Acc:0.6218
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1340
+Train : Macro:0.5884 Micro:0.6848 Acc:0.6848
+Test : Macro:0.5356 Micro:0.6227 Acc:0.6227
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1360
+Train : Macro:0.5875 Micro:0.6838 Acc:0.6838
+Test : Macro:0.5340 Micro:0.6205 Acc:0.6205
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1380
+Train : Macro:0.5803 Micro:0.6757 Acc:0.6757
+Test : Macro:0.5321 Micro:0.6184 Acc:0.6184
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1400
+Train : Macro:0.5803 Micro:0.6757 Acc:0.6757
+Test : Macro:0.5305 Micro:0.6171 Acc:0.6171
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1420
+Train : Macro:0.5795 Micro:0.6747 Acc:0.6747
+Test : Macro:0.5283 Micro:0.6145 Acc:0.6145
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1440
+Train : Macro:0.5787 Micro:0.6737 Acc:0.6737
+Test : Macro:0.5307 Micro:0.6175 Acc:0.6175
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1460
+Train : Macro:0.5774 Micro:0.6727 Acc:0.6727
+Test : Macro:0.5299 Micro:0.6149 Acc:0.6149
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1480
+Train : Macro:0.5775 Micro:0.6727 Acc:0.6727
+Test : Macro:0.5299 Micro:0.6149 Acc:0.6149
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1500
+Train : Macro:0.5735 Micro:0.6687 Acc:0.6687
+Test : Macro:0.5291 Micro:0.6141 Acc:0.6141
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1520
+Train : Macro:0.5729 Micro:0.6687 Acc:0.6687
+Test : Macro:0.5250 Micro:0.6115 Acc:0.6115
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1540
+Train : Macro:0.5741 Micro:0.6697 Acc:0.6697
+Test : Macro:0.5260 Micro:0.6128 Acc:0.6128
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1560
+Train : Macro:0.5784 Micro:0.6737 Acc:0.6737
+Test : Macro:0.5257 Micro:0.6123 Acc:0.6123
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1580
+Train : Macro:0.5791 Micro:0.6747 Acc:0.6747
+Test : Macro:0.5266 Micro:0.6132 Acc:0.6132
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1600
+Train : Macro:0.5777 Micro:0.6737 Acc:0.6737
+Test : Macro:0.5239 Micro:0.6102 Acc:0.6102
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1620
+Train : Macro:0.5767 Micro:0.6727 Acc:0.6727
+Test : Macro:0.5259 Micro:0.6119 Acc:0.6119
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1640
+Train : Macro:0.5721 Micro:0.6667 Acc:0.6667
+Test : Macro:0.5212 Micro:0.6072 Acc:0.6072
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1660
+Train : Macro:0.5681 Micro:0.6677 Acc:0.6677
+Test : Macro:0.5220 Micro:0.6080 Acc:0.6080
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1680
+Train : Macro:0.5656 Micro:0.6606 Acc:0.6606
+Test : Macro:0.5182 Micro:0.6041 Acc:0.6041
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1700
+Train : Macro:0.5625 Micro:0.6616 Acc:0.6616
+Test : Macro:0.5186 Micro:0.6041 Acc:0.6041
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1720
+Train : Macro:0.5629 Micro:0.6576 Acc:0.6576
+Test : Macro:0.5175 Micro:0.6028 Acc:0.6028
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1740
+Train : Macro:0.5544 Micro:0.6536 Acc:0.6536
+Test : Macro:0.5163 Micro:0.6016 Acc:0.6016
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+Epoch : 1760
+Train : Macro:0.5580 Micro:0.6536 Acc:0.6536
+Test : Macro:0.5141 Micro:0.5990 Acc:0.5990
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1780
+Train : Macro:0.5593 Micro:0.6546 Acc:0.6546
+Test : Macro:0.5123 Micro:0.5972 Acc:0.5972
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1800
+Train : Macro:0.5586 Micro:0.6536 Acc:0.6536
+Test : Macro:0.5123 Micro:0.5972 Acc:0.5972
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1820
+Train : Macro:0.5583 Micro:0.6536 Acc:0.6536
+Test : Macro:0.5090 Micro:0.5942 Acc:0.5942
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1840
+Train : Macro:0.5553 Micro:0.6506 Acc:0.6506
+Test : Macro:0.5111 Micro:0.5964 Acc:0.5964
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1860
+Train : Macro:0.5503 Micro:0.6495 Acc:0.6495
+Test : Macro:0.5110 Micro:0.5964 Acc:0.5964
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1880
+Train : Macro:0.5551 Micro:0.6495 Acc:0.6495
+Test : Macro:0.5090 Micro:0.5938 Acc:0.5938
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1900
+Train : Macro:0.5505 Micro:0.6445 Acc:0.6445
+Test : Macro:0.5051 Micro:0.5899 Acc:0.5899
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1920
+Train : Macro:0.5434 Micro:0.6415 Acc:0.6415
+Test : Macro:0.5038 Micro:0.5886 Acc:0.5886
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1940
+Train : Macro:0.5377 Micro:0.6354 Acc:0.6354
+Test : Macro:0.5048 Micro:0.5899 Acc:0.5899
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1960
+Train : Macro:0.5359 Micro:0.6344 Acc:0.6344
+Test : Macro:0.5024 Micro:0.5873 Acc:0.5873
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1980
+Train : Macro:0.5332 Micro:0.6314 Acc:0.6314
+Test : Macro:0.4978 Micro:0.5826 Acc:0.5826
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2000
+Train : Macro:0.5386 Micro:0.6365 Acc:0.6365
+Test : Macro:0.4962 Micro:0.5813 Acc:0.5813
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2020
+Train : Macro:0.5336 Micro:0.6314 Acc:0.6314
+Test : Macro:0.4963 Micro:0.5813 Acc:0.5813
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2040
+Train : Macro:0.5365 Micro:0.6344 Acc:0.6344
+Test : Macro:0.4946 Micro:0.5796 Acc:0.5796
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2060
+Train : Macro:0.5382 Micro:0.6365 Acc:0.6365
+Test : Macro:0.4915 Micro:0.5770 Acc:0.5770
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2080
+Train : Macro:0.5292 Micro:0.6284 Acc:0.6284
+Test : Macro:0.4947 Micro:0.5804 Acc:0.5804
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2100
+Train : Macro:0.5274 Micro:0.6264 Acc:0.6264
+Test : Macro:0.4885 Micro:0.5735 Acc:0.5735
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2120
+Train : Macro:0.5304 Micro:0.6294 Acc:0.6294
+Test : Macro:0.4873 Micro:0.5718 Acc:0.5718
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2140
+Train : Macro:0.5262 Micro:0.6254 Acc:0.6254
+Test : Macro:0.4851 Micro:0.5709 Acc:0.5709
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2160
+Train : Macro:0.5159 Micro:0.6163 Acc:0.6163
+Test : Macro:0.4850 Micro:0.5701 Acc:0.5701
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2180
+Train : Macro:0.5220 Micro:0.6213 Acc:0.6213
+Test : Macro:0.4810 Micro:0.5658 Acc:0.5658
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+Namespace(add_gcn=True, batch_size=32, dataset='citeseer', device=0, dropout=0.5, early_stop=5, epochs=2200, hidden_dim=128, hidden_dim_dec_feat=128, hidden_dim_enc_adj=512, hidden_dim_enc_feat=512, lr=0.0005, num_layers=1, seed=0, weight_decay=0.0)
+device :  cuda:0
+Epoch : 20
+Train : Macro:0.4565 Micro:0.5599 Acc:0.5599
+Test : Macro:0.4123 Micro:0.5101 Acc:0.5101
+maxes : 0.4123443110099681 0.5101336783096162 0.5101336783096162
+
+Epoch : 40
+Train : Macro:0.4803 Micro:0.5861 Acc:0.5861
+Test : Macro:0.4443 Micro:0.5382 Acc:0.5382
+maxes : 0.44429927525005697 0.538163001293661 0.538163001293661
+
+Epoch : 60
+Train : Macro:0.4883 Micro:0.5831 Acc:0.5831
+Test : Macro:0.4647 Micro:0.5511 Acc:0.5511
+maxes : 0.46467083903168493 0.5510996119016818 0.5510996119016818
+
+Epoch : 80
+Train : Macro:0.5163 Micro:0.6083 Acc:0.6083
+Test : Macro:0.4945 Micro:0.5774 Acc:0.5774
+maxes : 0.49445957568900417 0.5774040534713238 0.5774040534713238
+
+Epoch : 100
+Train : Macro:0.5416 Micro:0.6334 Acc:0.6334
+Test : Macro:0.5178 Micro:0.6020 Acc:0.6020
+maxes : 0.5178000841601783 0.6019836136265632 0.6019836136265632
+
+Epoch : 120
+Train : Macro:0.5553 Micro:0.6485 Acc:0.6485
+Test : Macro:0.5198 Micro:0.6054 Acc:0.6054
+maxes : 0.5198295319715557 0.6054333764553687 0.6054333764553687
+
+Epoch : 140
+Train : Macro:0.5683 Micro:0.6616 Acc:0.6616
+Test : Macro:0.5296 Micro:0.6149 Acc:0.6149
+maxes : 0.5296150700385055 0.6149202242345839 0.6149202242345839
+
+Epoch : 160
+Train : Macro:0.5715 Micro:0.6657 Acc:0.6657
+Test : Macro:0.5431 Micro:0.6274 Acc:0.6274
+maxes : 0.5430812496922409 0.6274256144890039 0.6274256144890039
+
+Epoch : 180
+Train : Macro:0.5843 Micro:0.6798 Acc:0.6798
+Test : Macro:0.5530 Micro:0.6386 Acc:0.6386
+maxes : 0.553004370691067 0.6386373436826218 0.6386373436826218
+
+Epoch : 200
+Train : Macro:0.5983 Micro:0.6969 Acc:0.6969
+Test : Macro:0.5627 Micro:0.6516 Acc:0.6516
+maxes : 0.5627301470847733 0.6515739542906425 0.6515739542906425
+
+Epoch : 220
+Train : Macro:0.6144 Micro:0.7080 Acc:0.7080
+Test : Macro:0.5676 Micro:0.6516 Acc:0.6516
+maxes : 0.5676223058286745 0.6515739542906425 0.6515739542906425
+
+Epoch : 240
+Train : Macro:0.6171 Micro:0.7100 Acc:0.7100
+Test : Macro:0.5727 Micro:0.6576 Acc:0.6576
+maxes : 0.5726771413482594 0.6576110392410521 0.6576110392410521
+
+Epoch : 260
+Train : Macro:0.6194 Micro:0.7130 Acc:0.7130
+Test : Macro:0.5690 Micro:0.6516 Acc:0.6516
+maxes : 0.5726771413482594 0.6576110392410521 0.6576110392410521
+
+Epoch : 280
+Train : Macro:0.6281 Micro:0.7170 Acc:0.7170
+Test : Macro:0.5795 Micro:0.6602 Acc:0.6602
+maxes : 0.5795394723331714 0.6601983613626563 0.6601983613626563
+
+Epoch : 300
+Train : Macro:0.6335 Micro:0.7231 Acc:0.7231
+Test : Macro:0.5785 Micro:0.6632 Acc:0.6632
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 320
+Train : Macro:0.6289 Micro:0.7190 Acc:0.7190
+Test : Macro:0.5734 Micro:0.6598 Acc:0.6598
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 340
+Train : Macro:0.6149 Micro:0.7100 Acc:0.7100
+Test : Macro:0.5670 Micro:0.6533 Acc:0.6533
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 360
+Train : Macro:0.6160 Micro:0.7100 Acc:0.7100
+Test : Macro:0.5693 Micro:0.6537 Acc:0.6537
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 380
+Train : Macro:0.6129 Micro:0.7069 Acc:0.7069
+Test : Macro:0.5675 Micro:0.6516 Acc:0.6516
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 400
+Train : Macro:0.6104 Micro:0.7039 Acc:0.7039
+Test : Macro:0.5678 Micro:0.6503 Acc:0.6503
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 420
+Train : Macro:0.6109 Micro:0.7049 Acc:0.7049
+Test : Macro:0.5690 Micro:0.6537 Acc:0.6537
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 440
+Train : Macro:0.6097 Micro:0.7039 Acc:0.7039
+Test : Macro:0.5639 Micro:0.6481 Acc:0.6481
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 460
+Train : Macro:0.6107 Micro:0.7049 Acc:0.7049
+Test : Macro:0.5685 Micro:0.6533 Acc:0.6533
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 480
+Train : Macro:0.6118 Micro:0.7059 Acc:0.7059
+Test : Macro:0.5683 Micro:0.6529 Acc:0.6529
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 500
+Train : Macro:0.6127 Micro:0.7069 Acc:0.7069
+Test : Macro:0.5679 Micro:0.6524 Acc:0.6524
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 520
+Train : Macro:0.6142 Micro:0.7090 Acc:0.7090
+Test : Macro:0.5664 Micro:0.6511 Acc:0.6511
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 540
+Train : Macro:0.6162 Micro:0.7110 Acc:0.7110
+Test : Macro:0.5714 Micro:0.6563 Acc:0.6563
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 560
+Train : Macro:0.6145 Micro:0.7090 Acc:0.7090
+Test : Macro:0.5692 Micro:0.6542 Acc:0.6542
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 580
+Train : Macro:0.6193 Micro:0.7140 Acc:0.7140
+Test : Macro:0.5676 Micro:0.6524 Acc:0.6524
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 600
+Train : Macro:0.6187 Micro:0.7130 Acc:0.7130
+Test : Macro:0.5678 Micro:0.6524 Acc:0.6524
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 620
+Train : Macro:0.6204 Micro:0.7150 Acc:0.7150
+Test : Macro:0.5673 Micro:0.6533 Acc:0.6533
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 640
+Train : Macro:0.6180 Micro:0.7120 Acc:0.7120
+Test : Macro:0.5648 Micro:0.6507 Acc:0.6507
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 660
+Train : Macro:0.6154 Micro:0.7090 Acc:0.7090
+Test : Macro:0.5615 Micro:0.6473 Acc:0.6473
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 680
+Train : Macro:0.6157 Micro:0.7100 Acc:0.7100
+Test : Macro:0.5622 Micro:0.6481 Acc:0.6481
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 700
+Train : Macro:0.6121 Micro:0.7049 Acc:0.7049
+Test : Macro:0.5611 Micro:0.6468 Acc:0.6468
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 720
+Train : Macro:0.6076 Micro:0.6999 Acc:0.6999
+Test : Macro:0.5590 Micro:0.6447 Acc:0.6447
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 740
+Train : Macro:0.6077 Micro:0.6999 Acc:0.6999
+Test : Macro:0.5566 Micro:0.6417 Acc:0.6417
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 760
+Train : Macro:0.6058 Micro:0.6979 Acc:0.6979
+Test : Macro:0.5569 Micro:0.6442 Acc:0.6442
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 780
+Train : Macro:0.6108 Micro:0.7029 Acc:0.7029
+Test : Macro:0.5521 Micro:0.6382 Acc:0.6382
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 800
+Train : Macro:0.6115 Micro:0.7039 Acc:0.7039
+Test : Macro:0.5512 Micro:0.6373 Acc:0.6373
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 820
+Train : Macro:0.6088 Micro:0.7009 Acc:0.7009
+Test : Macro:0.5507 Micro:0.6365 Acc:0.6365
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 840
+Train : Macro:0.6027 Micro:0.6989 Acc:0.6989
+Test : Macro:0.5512 Micro:0.6373 Acc:0.6373
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 860
+Train : Macro:0.5999 Micro:0.6959 Acc:0.6959
+Test : Macro:0.5525 Micro:0.6386 Acc:0.6386
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 880
+Train : Macro:0.5978 Micro:0.6989 Acc:0.6989
+Test : Macro:0.5499 Micro:0.6356 Acc:0.6356
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 900
+Train : Macro:0.5976 Micro:0.6989 Acc:0.6989
+Test : Macro:0.5497 Micro:0.6356 Acc:0.6356
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 920
+Train : Macro:0.5953 Micro:0.6969 Acc:0.6969
+Test : Macro:0.5493 Micro:0.6352 Acc:0.6352
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 940
+Train : Macro:0.6030 Micro:0.6999 Acc:0.6999
+Test : Macro:0.5495 Micro:0.6356 Acc:0.6356
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 960
+Train : Macro:0.5991 Micro:0.6959 Acc:0.6959
+Test : Macro:0.5458 Micro:0.6313 Acc:0.6313
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+Epoch : 980
+Train : Macro:0.5954 Micro:0.6969 Acc:0.6969
+Test : Macro:0.5463 Micro:0.6317 Acc:0.6317
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1000
+Train : Macro:0.5973 Micro:0.6989 Acc:0.6989
+Test : Macro:0.5439 Micro:0.6309 Acc:0.6309
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1020
+Train : Macro:0.6014 Micro:0.6989 Acc:0.6989
+Test : Macro:0.5479 Micro:0.6335 Acc:0.6335
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1040
+Train : Macro:0.5986 Micro:0.6959 Acc:0.6959
+Test : Macro:0.5450 Micro:0.6304 Acc:0.6304
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1060
+Train : Macro:0.5942 Micro:0.6959 Acc:0.6959
+Test : Macro:0.5423 Micro:0.6274 Acc:0.6274
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1080
+Train : Macro:0.5949 Micro:0.6969 Acc:0.6969
+Test : Macro:0.5428 Micro:0.6296 Acc:0.6296
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1100
+Train : Macro:0.5900 Micro:0.6918 Acc:0.6918
+Test : Macro:0.5422 Micro:0.6292 Acc:0.6292
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1120
+Train : Macro:0.5880 Micro:0.6898 Acc:0.6898
+Test : Macro:0.5413 Micro:0.6283 Acc:0.6283
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1140
+Train : Macro:0.5871 Micro:0.6878 Acc:0.6878
+Test : Macro:0.5410 Micro:0.6279 Acc:0.6279
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1160
+Train : Macro:0.5923 Micro:0.6888 Acc:0.6888
+Test : Macro:0.5395 Micro:0.6261 Acc:0.6261
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1180
+Train : Macro:0.5954 Micro:0.6878 Acc:0.6878
+Test : Macro:0.5418 Micro:0.6270 Acc:0.6270
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1200
+Train : Macro:0.5924 Micro:0.6888 Acc:0.6888
+Test : Macro:0.5356 Micro:0.6218 Acc:0.6218
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1220
+Train : Macro:0.5922 Micro:0.6888 Acc:0.6888
+Test : Macro:0.5340 Micro:0.6205 Acc:0.6205
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1240
+Train : Macro:0.5861 Micro:0.6868 Acc:0.6868
+Test : Macro:0.5357 Micro:0.6227 Acc:0.6227
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1260
+Train : Macro:0.5876 Micro:0.6838 Acc:0.6838
+Test : Macro:0.5353 Micro:0.6218 Acc:0.6218
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1280
+Train : Macro:0.5894 Micro:0.6858 Acc:0.6858
+Test : Macro:0.5349 Micro:0.6218 Acc:0.6218
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1300
+Train : Macro:0.5912 Micro:0.6878 Acc:0.6878
+Test : Macro:0.5360 Micro:0.6231 Acc:0.6231
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1320
+Train : Macro:0.5883 Micro:0.6848 Acc:0.6848
+Test : Macro:0.5349 Micro:0.6218 Acc:0.6218
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1340
+Train : Macro:0.5884 Micro:0.6848 Acc:0.6848
+Test : Macro:0.5356 Micro:0.6227 Acc:0.6227
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1360
+Train : Macro:0.5875 Micro:0.6838 Acc:0.6838
+Test : Macro:0.5340 Micro:0.6205 Acc:0.6205
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1380
+Train : Macro:0.5803 Micro:0.6757 Acc:0.6757
+Test : Macro:0.5321 Micro:0.6184 Acc:0.6184
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1400
+Train : Macro:0.5803 Micro:0.6757 Acc:0.6757
+Test : Macro:0.5305 Micro:0.6171 Acc:0.6171
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1420
+Train : Macro:0.5795 Micro:0.6747 Acc:0.6747
+Test : Macro:0.5283 Micro:0.6145 Acc:0.6145
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1440
+Train : Macro:0.5787 Micro:0.6737 Acc:0.6737
+Test : Macro:0.5307 Micro:0.6175 Acc:0.6175
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1460
+Train : Macro:0.5774 Micro:0.6727 Acc:0.6727
+Test : Macro:0.5299 Micro:0.6149 Acc:0.6149
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1480
+Train : Macro:0.5775 Micro:0.6727 Acc:0.6727
+Test : Macro:0.5299 Micro:0.6149 Acc:0.6149
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1500
+Train : Macro:0.5735 Micro:0.6687 Acc:0.6687
+Test : Macro:0.5291 Micro:0.6141 Acc:0.6141
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1520
+Train : Macro:0.5729 Micro:0.6687 Acc:0.6687
+Test : Macro:0.5250 Micro:0.6115 Acc:0.6115
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1540
+Train : Macro:0.5741 Micro:0.6697 Acc:0.6697
+Test : Macro:0.5260 Micro:0.6128 Acc:0.6128
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1560
+Train : Macro:0.5784 Micro:0.6737 Acc:0.6737
+Test : Macro:0.5257 Micro:0.6123 Acc:0.6123
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1580
+Train : Macro:0.5791 Micro:0.6747 Acc:0.6747
+Test : Macro:0.5266 Micro:0.6132 Acc:0.6132
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1600
+Train : Macro:0.5777 Micro:0.6737 Acc:0.6737
+Test : Macro:0.5239 Micro:0.6102 Acc:0.6102
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1620
+Train : Macro:0.5767 Micro:0.6727 Acc:0.6727
+Test : Macro:0.5259 Micro:0.6119 Acc:0.6119
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1640
+Train : Macro:0.5721 Micro:0.6667 Acc:0.6667
+Test : Macro:0.5212 Micro:0.6072 Acc:0.6072
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1660
+Train : Macro:0.5681 Micro:0.6677 Acc:0.6677
+Test : Macro:0.5220 Micro:0.6080 Acc:0.6080
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1680
+Train : Macro:0.5656 Micro:0.6606 Acc:0.6606
+Test : Macro:0.5182 Micro:0.6041 Acc:0.6041
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1700
+Train : Macro:0.5625 Micro:0.6616 Acc:0.6616
+Test : Macro:0.5186 Micro:0.6041 Acc:0.6041
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1720
+Train : Macro:0.5629 Micro:0.6576 Acc:0.6576
+Test : Macro:0.5175 Micro:0.6028 Acc:0.6028
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1740
+Train : Macro:0.5544 Micro:0.6536 Acc:0.6536
+Test : Macro:0.5163 Micro:0.6016 Acc:0.6016
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+Epoch : 1760
+Train : Macro:0.5580 Micro:0.6536 Acc:0.6536
+Test : Macro:0.5141 Micro:0.5990 Acc:0.5990
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1780
+Train : Macro:0.5593 Micro:0.6546 Acc:0.6546
+Test : Macro:0.5123 Micro:0.5972 Acc:0.5972
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1800
+Train : Macro:0.5586 Micro:0.6536 Acc:0.6536
+Test : Macro:0.5123 Micro:0.5972 Acc:0.5972
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1820
+Train : Macro:0.5583 Micro:0.6536 Acc:0.6536
+Test : Macro:0.5090 Micro:0.5942 Acc:0.5942
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1840
+Train : Macro:0.5553 Micro:0.6506 Acc:0.6506
+Test : Macro:0.5111 Micro:0.5964 Acc:0.5964
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1860
+Train : Macro:0.5503 Micro:0.6495 Acc:0.6495
+Test : Macro:0.5110 Micro:0.5964 Acc:0.5964
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1880
+Train : Macro:0.5551 Micro:0.6495 Acc:0.6495
+Test : Macro:0.5090 Micro:0.5938 Acc:0.5938
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1900
+Train : Macro:0.5505 Micro:0.6445 Acc:0.6445
+Test : Macro:0.5051 Micro:0.5899 Acc:0.5899
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1920
+Train : Macro:0.5434 Micro:0.6415 Acc:0.6415
+Test : Macro:0.5038 Micro:0.5886 Acc:0.5886
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1940
+Train : Macro:0.5377 Micro:0.6354 Acc:0.6354
+Test : Macro:0.5048 Micro:0.5899 Acc:0.5899
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1960
+Train : Macro:0.5359 Micro:0.6344 Acc:0.6344
+Test : Macro:0.5024 Micro:0.5873 Acc:0.5873
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 1980
+Train : Macro:0.5332 Micro:0.6314 Acc:0.6314
+Test : Macro:0.4978 Micro:0.5826 Acc:0.5826
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2000
+Train : Macro:0.5386 Micro:0.6365 Acc:0.6365
+Test : Macro:0.4962 Micro:0.5813 Acc:0.5813
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2020
+Train : Macro:0.5336 Micro:0.6314 Acc:0.6314
+Test : Macro:0.4963 Micro:0.5813 Acc:0.5813
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2040
+Train : Macro:0.5365 Micro:0.6344 Acc:0.6344
+Test : Macro:0.4946 Micro:0.5796 Acc:0.5796
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2060
+Train : Macro:0.5382 Micro:0.6365 Acc:0.6365
+Test : Macro:0.4915 Micro:0.5770 Acc:0.5770
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2080
+Train : Macro:0.5292 Micro:0.6284 Acc:0.6284
+Test : Macro:0.4947 Micro:0.5804 Acc:0.5804
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2100
+Train : Macro:0.5274 Micro:0.6264 Acc:0.6264
+Test : Macro:0.4885 Micro:0.5735 Acc:0.5735
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2120
+Train : Macro:0.5304 Micro:0.6294 Acc:0.6294
+Test : Macro:0.4873 Micro:0.5718 Acc:0.5718
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2140
+Train : Macro:0.5262 Micro:0.6254 Acc:0.6254
+Test : Macro:0.4851 Micro:0.5709 Acc:0.5709
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2160
+Train : Macro:0.5159 Micro:0.6163 Acc:0.6163
+Test : Macro:0.4850 Micro:0.5701 Acc:0.5701
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+Epoch : 2180
+Train : Macro:0.5220 Micro:0.6213 Acc:0.6213
+Test : Macro:0.4810 Micro:0.5658 Acc:0.5658
+maxes : 0.5795394723331714 0.6632169038378611 0.6632169038378611
+
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)

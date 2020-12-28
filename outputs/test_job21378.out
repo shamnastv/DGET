@@ -1,0 +1,438 @@
+Namespace(batch_size=32, dataset='citeseer', device=0, dropout=0.5, early_stop=5, epochs=2200, hidden_dim=128, hidden_dim_dec_feat=128, hidden_dim_enc_adj=512, hidden_dim_enc_feat=512, lr=0.0005, num_layers=1, seed=0, weight_decay=0.0)
+device :  cuda:0
+Epoch : 20
+Train : Macro:0.3500 Micro:0.4612 Acc:0.4612
+Test : Macro:0.2857 Micro:0.3946 Acc:0.3946
+ 
+Epoch : 40
+Train : Macro:0.3442 Micro:0.4522 Acc:0.4522
+Test : Macro:0.2856 Micro:0.3911 Acc:0.3911
+ 
+Epoch : 60
+Train : Macro:0.3964 Micro:0.5035 Acc:0.5035
+Test : Macro:0.3291 Micro:0.4347 Acc:0.4347
+ 
+Epoch : 80
+Train : Macro:0.4467 Micro:0.5458 Acc:0.5458
+Test : Macro:0.4148 Micro:0.5063 Acc:0.5063
+ 
+Epoch : 100
+Train : Macro:0.4699 Micro:0.5650 Acc:0.5650
+Test : Macro:0.4406 Micro:0.5282 Acc:0.5282
+ 
+Epoch : 120
+Train : Macro:0.5066 Micro:0.6012 Acc:0.6012
+Test : Macro:0.4905 Micro:0.5770 Acc:0.5770
+ 
+Epoch : 140
+Train : Macro:0.5039 Micro:0.6002 Acc:0.6002
+Test : Macro:0.5050 Micro:0.5912 Acc:0.5912
+ 
+Epoch : 160
+Train : Macro:0.5260 Micro:0.6193 Acc:0.6193
+Test : Macro:0.5224 Micro:0.6076 Acc:0.6076
+ 
+Epoch : 180
+Train : Macro:0.5586 Micro:0.6546 Acc:0.6546
+Test : Macro:0.5575 Micro:0.6455 Acc:0.6455
+ 
+Epoch : 200
+Train : Macro:0.5721 Micro:0.6697 Acc:0.6697
+Test : Macro:0.5705 Micro:0.6602 Acc:0.6602
+ 
+Epoch : 220
+Train : Macro:0.5922 Micro:0.6918 Acc:0.6918
+Test : Macro:0.5826 Micro:0.6736 Acc:0.6736
+ 
+Epoch : 240
+Train : Macro:0.6045 Micro:0.7059 Acc:0.7059
+Test : Macro:0.5940 Micro:0.6861 Acc:0.6861
+ 
+Epoch : 260
+Train : Macro:0.6140 Micro:0.7170 Acc:0.7170
+Test : Macro:0.6019 Micro:0.6943 Acc:0.6943
+ 
+Epoch : 280
+Train : Macro:0.6168 Micro:0.7200 Acc:0.7200
+Test : Macro:0.6085 Micro:0.7020 Acc:0.7020
+ 
+Epoch : 300
+Train : Macro:0.6156 Micro:0.7180 Acc:0.7180
+Test : Macro:0.6151 Micro:0.7094 Acc:0.7094
+ 
+Epoch : 320
+Train : Macro:0.6161 Micro:0.7190 Acc:0.7190
+Test : Macro:0.6193 Micro:0.7141 Acc:0.7141
+ 
+Epoch : 340
+Train : Macro:0.6174 Micro:0.7200 Acc:0.7200
+Test : Macro:0.6219 Micro:0.7167 Acc:0.7167
+ 
+Epoch : 360
+Train : Macro:0.6175 Micro:0.7200 Acc:0.7200
+Test : Macro:0.6240 Micro:0.7171 Acc:0.7171
+ 
+Epoch : 380
+Train : Macro:0.6191 Micro:0.7221 Acc:0.7221
+Test : Macro:0.6245 Micro:0.7176 Acc:0.7176
+ 
+Epoch : 400
+Train : Macro:0.6255 Micro:0.7291 Acc:0.7291
+Test : Macro:0.6362 Micro:0.7275 Acc:0.7275
+ 
+Epoch : 420
+Train : Macro:0.6370 Micro:0.7321 Acc:0.7321
+Test : Macro:0.6402 Micro:0.7292 Acc:0.7292
+ 
+Epoch : 440
+Train : Macro:0.6504 Micro:0.7382 Acc:0.7382
+Test : Macro:0.6434 Micro:0.7292 Acc:0.7292
+ 
+Epoch : 460
+Train : Macro:0.6699 Micro:0.7432 Acc:0.7432
+Test : Macro:0.6415 Micro:0.7262 Acc:0.7262
+ 
+Epoch : 480
+Train : Macro:0.6720 Micro:0.7492 Acc:0.7492
+Test : Macro:0.6441 Micro:0.7275 Acc:0.7275
+ 
+Epoch : 500
+Train : Macro:0.6781 Micro:0.7523 Acc:0.7523
+Test : Macro:0.6462 Micro:0.7283 Acc:0.7283
+ 
+Epoch : 520
+Train : Macro:0.6748 Micro:0.7523 Acc:0.7523
+Test : Macro:0.6472 Micro:0.7262 Acc:0.7262
+ 
+Epoch : 540
+Train : Macro:0.6812 Micro:0.7553 Acc:0.7553
+Test : Macro:0.6475 Micro:0.7249 Acc:0.7249
+ 
+Epoch : 560
+Train : Macro:0.6831 Micro:0.7573 Acc:0.7573
+Test : Macro:0.6457 Micro:0.7227 Acc:0.7227
+ 
+Epoch : 580
+Train : Macro:0.6902 Micro:0.7613 Acc:0.7613
+Test : Macro:0.6428 Micro:0.7223 Acc:0.7223
+ 
+Epoch : 600
+Train : Macro:0.6946 Micro:0.7623 Acc:0.7623
+Test : Macro:0.6420 Micro:0.7197 Acc:0.7197
+ 
+Epoch : 620
+Train : Macro:0.7080 Micro:0.7704 Acc:0.7704
+Test : Macro:0.6397 Micro:0.7171 Acc:0.7171
+ 
+Epoch : 640
+Train : Macro:0.7110 Micro:0.7734 Acc:0.7734
+Test : Macro:0.6419 Micro:0.7180 Acc:0.7180
+ 
+Epoch : 660
+Train : Macro:0.7223 Micro:0.7764 Acc:0.7764
+Test : Macro:0.6448 Micro:0.7184 Acc:0.7184
+ 
+Epoch : 680
+Train : Macro:0.7231 Micro:0.7774 Acc:0.7774
+Test : Macro:0.6488 Micro:0.7188 Acc:0.7188
+ 
+Epoch : 700
+Train : Macro:0.7238 Micro:0.7784 Acc:0.7784
+Test : Macro:0.6541 Micro:0.7223 Acc:0.7223
+ 
+Epoch : 720
+Train : Macro:0.7229 Micro:0.7774 Acc:0.7774
+Test : Macro:0.6558 Micro:0.7227 Acc:0.7227
+ 
+Epoch : 740
+Train : Macro:0.7292 Micro:0.7815 Acc:0.7815
+Test : Macro:0.6617 Micro:0.7270 Acc:0.7270
+ 
+Epoch : 760
+Train : Macro:0.7338 Micro:0.7835 Acc:0.7835
+Test : Macro:0.6639 Micro:0.7283 Acc:0.7283
+ 
+Epoch : 780
+Train : Macro:0.7296 Micro:0.7825 Acc:0.7825
+Test : Macro:0.6664 Micro:0.7301 Acc:0.7301
+ 
+Epoch : 800
+Train : Macro:0.7293 Micro:0.7795 Acc:0.7795
+Test : Macro:0.6665 Micro:0.7313 Acc:0.7313
+ 
+Epoch : 820
+Train : Macro:0.7287 Micro:0.7784 Acc:0.7784
+Test : Macro:0.6646 Micro:0.7292 Acc:0.7292
+ 
+Epoch : 840
+Train : Macro:0.7264 Micro:0.7764 Acc:0.7764
+Test : Macro:0.6650 Micro:0.7283 Acc:0.7283
+ 
+Epoch : 860
+Train : Macro:0.7340 Micro:0.7795 Acc:0.7795
+Test : Macro:0.6636 Micro:0.7266 Acc:0.7266
+ 
+Epoch : 880
+Train : Macro:0.7314 Micro:0.7795 Acc:0.7795
+Test : Macro:0.6619 Micro:0.7257 Acc:0.7257
+ 
+Epoch : 900
+Train : Macro:0.7298 Micro:0.7774 Acc:0.7774
+Test : Macro:0.6634 Micro:0.7262 Acc:0.7262
+ 
+Epoch : 920
+Train : Macro:0.7260 Micro:0.7714 Acc:0.7714
+Test : Macro:0.6620 Micro:0.7257 Acc:0.7257
+ 
+Epoch : 940
+Train : Macro:0.7294 Micro:0.7754 Acc:0.7754
+Test : Macro:0.6635 Micro:0.7253 Acc:0.7253
+ 
+Epoch : 960
+Train : Macro:0.7327 Micro:0.7764 Acc:0.7764
+Test : Macro:0.6650 Micro:0.7257 Acc:0.7257
+ 
+Epoch : 980
+Train : Macro:0.7347 Micro:0.7764 Acc:0.7764
+Test : Macro:0.6651 Micro:0.7257 Acc:0.7257
+ 
+Epoch : 1000
+Train : Macro:0.7345 Micro:0.7764 Acc:0.7764
+Test : Macro:0.6677 Micro:0.7275 Acc:0.7275
+ 
+Epoch : 1020
+Train : Macro:0.7321 Micro:0.7764 Acc:0.7764
+Test : Macro:0.6662 Micro:0.7262 Acc:0.7262
+ 
+Epoch : 1040
+Train : Macro:0.7315 Micro:0.7764 Acc:0.7764
+Test : Macro:0.6655 Micro:0.7253 Acc:0.7253
+ 
+Epoch : 1060
+Train : Macro:0.7332 Micro:0.7784 Acc:0.7784
+Test : Macro:0.6652 Micro:0.7240 Acc:0.7240
+ 
+Epoch : 1080
+Train : Macro:0.7340 Micro:0.7795 Acc:0.7795
+Test : Macro:0.6640 Micro:0.7227 Acc:0.7227
+ 
+Epoch : 1100
+Train : Macro:0.7296 Micro:0.7774 Acc:0.7774
+Test : Macro:0.6609 Micro:0.7193 Acc:0.7193
+ 
+Epoch : 1120
+Train : Macro:0.7335 Micro:0.7795 Acc:0.7795
+Test : Macro:0.6609 Micro:0.7193 Acc:0.7193
+ 
+Epoch : 1140
+Train : Macro:0.7357 Micro:0.7815 Acc:0.7815
+Test : Macro:0.6619 Micro:0.7193 Acc:0.7193
+ 
+Epoch : 1160
+Train : Macro:0.7358 Micro:0.7815 Acc:0.7815
+Test : Macro:0.6640 Micro:0.7206 Acc:0.7206
+ 
+Epoch : 1180
+Train : Macro:0.7385 Micro:0.7845 Acc:0.7845
+Test : Macro:0.6676 Micro:0.7223 Acc:0.7223
+ 
+Epoch : 1200
+Train : Macro:0.7377 Micro:0.7835 Acc:0.7835
+Test : Macro:0.6651 Micro:0.7197 Acc:0.7197
+ 
+Epoch : 1220
+Train : Macro:0.7370 Micro:0.7855 Acc:0.7855
+Test : Macro:0.6649 Micro:0.7193 Acc:0.7193
+ 
+Epoch : 1240
+Train : Macro:0.7410 Micro:0.7875 Acc:0.7875
+Test : Macro:0.6637 Micro:0.7180 Acc:0.7180
+ 
+Epoch : 1260
+Train : Macro:0.7391 Micro:0.7855 Acc:0.7855
+Test : Macro:0.6630 Micro:0.7171 Acc:0.7171
+ 
+Epoch : 1280
+Train : Macro:0.7409 Micro:0.7875 Acc:0.7875
+Test : Macro:0.6627 Micro:0.7158 Acc:0.7158
+ 
+Epoch : 1300
+Train : Macro:0.7371 Micro:0.7885 Acc:0.7885
+Test : Macro:0.6619 Micro:0.7150 Acc:0.7150
+ 
+Epoch : 1320
+Train : Macro:0.7453 Micro:0.7925 Acc:0.7925
+Test : Macro:0.6602 Micro:0.7132 Acc:0.7132
+ 
+Epoch : 1340
+Train : Macro:0.7490 Micro:0.7966 Acc:0.7966
+Test : Macro:0.6600 Micro:0.7128 Acc:0.7128
+ 
+Epoch : 1360
+Train : Macro:0.7487 Micro:0.7956 Acc:0.7956
+Test : Macro:0.6591 Micro:0.7128 Acc:0.7128
+ 
+Epoch : 1380
+Train : Macro:0.7527 Micro:0.7976 Acc:0.7976
+Test : Macro:0.6591 Micro:0.7128 Acc:0.7128
+ 
+Epoch : 1400
+Train : Macro:0.7535 Micro:0.7986 Acc:0.7986
+Test : Macro:0.6583 Micro:0.7119 Acc:0.7119
+ 
+Epoch : 1420
+Train : Macro:0.7564 Micro:0.8016 Acc:0.8016
+Test : Macro:0.6585 Micro:0.7119 Acc:0.7119
+ 
+Epoch : 1440
+Train : Macro:0.7586 Micro:0.8016 Acc:0.8016
+Test : Macro:0.6590 Micro:0.7124 Acc:0.7124
+ 
+Epoch : 1460
+Train : Macro:0.7648 Micro:0.8066 Acc:0.8066
+Test : Macro:0.6578 Micro:0.7111 Acc:0.7111
+ 
+Epoch : 1480
+Train : Macro:0.7661 Micro:0.8056 Acc:0.8056
+Test : Macro:0.6594 Micro:0.7128 Acc:0.7128
+ 
+Epoch : 1500
+Train : Macro:0.7651 Micro:0.8046 Acc:0.8046
+Test : Macro:0.6563 Micro:0.7102 Acc:0.7102
+ 
+Epoch : 1520
+Train : Macro:0.7691 Micro:0.8066 Acc:0.8066
+Test : Macro:0.6567 Micro:0.7098 Acc:0.7098
+ 
+Epoch : 1540
+Train : Macro:0.7664 Micro:0.8056 Acc:0.8056
+Test : Macro:0.6570 Micro:0.7102 Acc:0.7102
+ 
+Epoch : 1560
+Train : Macro:0.7664 Micro:0.8056 Acc:0.8056
+Test : Macro:0.6611 Micro:0.7128 Acc:0.7128
+ 
+Epoch : 1580
+Train : Macro:0.7681 Micro:0.8077 Acc:0.8077
+Test : Macro:0.6605 Micro:0.7124 Acc:0.7124
+ 
+Epoch : 1600
+Train : Macro:0.7725 Micro:0.8097 Acc:0.8097
+Test : Macro:0.6613 Micro:0.7124 Acc:0.7124
+ 
+Epoch : 1620
+Train : Macro:0.7762 Micro:0.8117 Acc:0.8117
+Test : Macro:0.6621 Micro:0.7132 Acc:0.7132
+ 
+Epoch : 1640
+Train : Macro:0.7732 Micro:0.8107 Acc:0.8107
+Test : Macro:0.6605 Micro:0.7115 Acc:0.7115
+ 
+Epoch : 1660
+Train : Macro:0.7740 Micro:0.8117 Acc:0.8117
+Test : Macro:0.6587 Micro:0.7107 Acc:0.7107
+ 
+Epoch : 1680
+Train : Macro:0.7732 Micro:0.8107 Acc:0.8107
+Test : Macro:0.6587 Micro:0.7107 Acc:0.7107
+ 
+Epoch : 1700
+Train : Macro:0.7723 Micro:0.8097 Acc:0.8097
+Test : Macro:0.6587 Micro:0.7107 Acc:0.7107
+ 
+Epoch : 1720
+Train : Macro:0.7752 Micro:0.8107 Acc:0.8107
+Test : Macro:0.6593 Micro:0.7115 Acc:0.7115
+ 
+Epoch : 1740
+Train : Macro:0.7763 Micro:0.8117 Acc:0.8117
+Test : Macro:0.6588 Micro:0.7111 Acc:0.7111
+ 
+Epoch : 1760
+Train : Macro:0.7793 Micro:0.8127 Acc:0.8127
+Test : Macro:0.6589 Micro:0.7111 Acc:0.7111
+ 
+Epoch : 1780
+Train : Macro:0.7819 Micro:0.8137 Acc:0.8137
+Test : Macro:0.6580 Micro:0.7102 Acc:0.7102
+ 
+Epoch : 1800
+Train : Macro:0.7819 Micro:0.8137 Acc:0.8137
+Test : Macro:0.6562 Micro:0.7094 Acc:0.7094
+ 
+Epoch : 1820
+Train : Macro:0.7874 Micro:0.8157 Acc:0.8157
+Test : Macro:0.6575 Micro:0.7089 Acc:0.7089
+ 
+Epoch : 1840
+Train : Macro:0.7882 Micro:0.8167 Acc:0.8167
+Test : Macro:0.6542 Micro:0.7081 Acc:0.7081
+ 
+Epoch : 1860
+Train : Macro:0.7880 Micro:0.8167 Acc:0.8167
+Test : Macro:0.6554 Micro:0.7085 Acc:0.7085
+ 
+Epoch : 1880
+Train : Macro:0.7881 Micro:0.8167 Acc:0.8167
+Test : Macro:0.6561 Micro:0.7085 Acc:0.7085
+ 
+Epoch : 1900
+Train : Macro:0.7881 Micro:0.8167 Acc:0.8167
+Test : Macro:0.6583 Micro:0.7102 Acc:0.7102
+ 
+Epoch : 1920
+Train : Macro:0.7881 Micro:0.8167 Acc:0.8167
+Test : Macro:0.6583 Micro:0.7102 Acc:0.7102
+ 
+Epoch : 1940
+Train : Macro:0.7881 Micro:0.8167 Acc:0.8167
+Test : Macro:0.6583 Micro:0.7094 Acc:0.7094
+ 
+Epoch : 1960
+Train : Macro:0.7882 Micro:0.8167 Acc:0.8167
+Test : Macro:0.6579 Micro:0.7089 Acc:0.7089
+ 
+Epoch : 1980
+Train : Macro:0.7890 Micro:0.8177 Acc:0.8177
+Test : Macro:0.6559 Micro:0.7068 Acc:0.7068
+ 
+Epoch : 2000
+Train : Macro:0.7892 Micro:0.8177 Acc:0.8177
+Test : Macro:0.6556 Micro:0.7063 Acc:0.7063
+ 
+Epoch : 2020
+Train : Macro:0.7878 Micro:0.8167 Acc:0.8167
+Test : Macro:0.6566 Micro:0.7068 Acc:0.7068
+ 
+Epoch : 2040
+Train : Macro:0.7886 Micro:0.8177 Acc:0.8177
+Test : Macro:0.6581 Micro:0.7085 Acc:0.7085
+ 
+Epoch : 2060
+Train : Macro:0.7888 Micro:0.8177 Acc:0.8177
+Test : Macro:0.6577 Micro:0.7081 Acc:0.7081
+ 
+Epoch : 2080
+Train : Macro:0.7887 Micro:0.8177 Acc:0.8177
+Test : Macro:0.6589 Micro:0.7085 Acc:0.7085
+ 
+Epoch : 2100
+Train : Macro:0.7887 Micro:0.8177 Acc:0.8177
+Test : Macro:0.6593 Micro:0.7089 Acc:0.7089
+ 
+Epoch : 2120
+Train : Macro:0.7887 Micro:0.8177 Acc:0.8177
+Test : Macro:0.6594 Micro:0.7089 Acc:0.7089
+ 
+Epoch : 2140
+Train : Macro:0.7877 Micro:0.8167 Acc:0.8167
+Test : Macro:0.6595 Micro:0.7089 Acc:0.7089
+ 
+Epoch : 2160
+Train : Macro:0.7868 Micro:0.8157 Acc:0.8157
+Test : Macro:0.6595 Micro:0.7089 Acc:0.7089
+ 
+Epoch : 2180
+Train : Macro:0.7896 Micro:0.8187 Acc:0.8187
+Test : Macro:0.6611 Micro:0.7098 Acc:0.7098
+ 
