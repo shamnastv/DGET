@@ -63,7 +63,7 @@ def test(epoch, model, adj_norm, features, label):
 
 def main():
     parser = argparse.ArgumentParser(description='Torch for DGE')
-    parser.add_argument("--dataset", type=str, default="citeseer", help="dataset name")
+    parser.add_argument("--dataset", type=str, default="cora", help="dataset name")
     parser.add_argument('--device', type=int, default=0, help='which gpu to use if any (default: 0)')
 
     parser.add_argument('--hidden_dim_enc_adj', type=int, default=512, help='hidden dimension')

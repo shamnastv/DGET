@@ -14,30 +14,44 @@ def normalize(mx):
     return mx
 
 
-def read_feature(filename):
+def read_feature(dataset):
+    filename = './datasets/' + dataset + '/' + dataset + '.feature'
     with open(filename) as f:
-        n, d = f.readline().strip('\n').split(' ')
-        n, d = int(n), int(d)
-        features = []
-        for line in f.readlines():
-            features.append(list(map(float, line.strip('\n').split(' '))))
+        if dataset == 'citeseer':
+            n, d = f.readline().strip('\n').split(' ')
+            n, d = int(n), int(d)
+            features = []
+            for line in f.readlines():
+                features.append(list(map(float, line.strip('\n').split(' '))))
 
-        features = np.array(features, dtype=np.float)
+            features = np.array(features, dtype=np.float)
+        else:
+            features = []
+            for line in f.readlines():
+                features.append(list(map(float, line.strip('\n').split(','))))
+
+            features = np.array(features, dtype=np.float)
+            n, d = features.shape[0], features.shape[1]
         return features, n, d
 
 
-def read_label(filename):
+def read_label(dataset):
+    filename = './datasets/' + dataset + '/' + dataset + '.label'
     with open(filename) as f:
         lines = f.readlines()
         n = len(lines)
         label = np.zeros((n, ), dtype=np.int)
-        for line in lines:
-            i, lb = line.strip('\n').split(' ')
+        for j, line in enumerate(lines):
+            if dataset == 'citeseer':
+                i, lb = line.strip('\n').split(' ')
+            else:
+                i, lb = j, line.strip()
             label[int(i)] = int(lb)
     return label
 
 
-def read_edgelist(filename, n):
+def read_edgelist(dataset, n):
+    filename = './datasets/' + dataset + '/' + dataset + '.edgelist'
     adj = np.zeros((n, n), dtype=np.float32)
     with open(filename) as f:
         for line in f.readlines():
@@ -55,20 +69,16 @@ def read_edgelist(filename, n):
 
 
 def load_data(dataset):
-    prefix = './datasets/' + dataset + '/' + dataset
-    feature_file = prefix + '.feature'
-    label_file = prefix + '.label'
-    edge_file = prefix + '.edgelist'
 
-    features, n, d = read_feature(feature_file)
-    label = read_label(label_file)
-    adj, adj_norm = read_edgelist(edge_file, n)
+    features, n, d = read_feature(dataset)
+    label = read_label(dataset)
+    adj, adj_norm = read_edgelist(dataset, n)
 
     return adj, adj_norm, features, label
 
 
 def main():
-    adj, adj_norm, features, label = load_data('citeseer')
+    adj, adj_norm, features, label = load_data('cora')
     print(adj.shape)
     print(adj_norm.shape)
     print(features.shape)
