@@ -1,3 +1,5 @@
+import copy
+
 import numpy as np
 import scipy.sparse as sp
 
@@ -44,7 +46,8 @@ def read_edgelist(filename, n):
             adj[i, j] = 1
             adj[j, i] = 1
 
-    adj_norm = adj + np.identity(n)
+    adj_norm = copy.deepcopy(adj)
+    adj_norm = adj_norm + np.identity(n)
     # adj_norm /= np.tile(np.mat(np.sum(adj_norm, axis=1)), (n, 1)).T
     adj_norm = normalize(adj_norm)
 

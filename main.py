@@ -4,6 +4,7 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 from mlxtend.evaluate import accuracy_score
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import f1_score
 from sklearn.model_selection import train_test_split
 from sklearn.svm import LinearSVC
@@ -12,21 +13,21 @@ from load_data import load_data
 from model import DGE
 
 
-def total_loss(mu, var, adj_logit, feat_logits, adj, features):
+def total_loss(mu, var, adj_logits, feat_logits, adj, features):
     kl_loss = -0.5 * torch.mean(torch.sum(torch.tensor(1).float().to(var.device) + var - mu ** 2 - torch.exp(var), dim=-1))
 
     n = adj.shape[0]
     pos_weight = (n * n - torch.sum(adj)) / torch.sum(adj)
-    adj_loss = n * F.binary_cross_entropy_with_logits(input=adj_logit, target=adj, pos_weight=pos_weight)
+    adj_loss = n * F.binary_cross_entropy_with_logits(input=adj_logits, target=adj, pos_weight=pos_weight)
 
     feat_loss = torch.mean(torch.sum((feat_logits - features) ** 2, dim=-1))
     return kl_loss + adj_loss + feat_loss
 
 
 def train(model, optimizer, adj, adj_norm, features):
-    mu, var, adj_logit, feat_logits = model(adj_norm, features)
+    mu, var, adj_logits, feat_logits = model(adj_norm, features)
 
-    loss = total_loss(mu, var, adj_logit, feat_logits, adj, features)
+    loss = total_loss(mu, var, adj_logits, feat_logits, adj, features)
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
@@ -40,6 +41,7 @@ def test(epoch, model, adj_norm, features, label):
     mu = mu.detach().cpu().numpy()
     train_X, test_X, train_y, test_y = train_test_split(mu, label, test_size=1.0 - p, random_state=1234)
     clf = LinearSVC()
+    # clf = RandomForestClassifier(max_depth=2, random_state=0)
     clf.fit(train_X, train_y)
 
     print('Epoch :', epoch)
