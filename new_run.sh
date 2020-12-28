@@ -6,7 +6,5 @@
 #SBATCH --gres=gpu:1
 #SBATCH --partition=cl1_48h-1G
 
-python3 hyper_main.py
-
-python3 hyper_main.py --dataset cora
+python3 hyper_main.py --dataset cora --add_gcn
 
