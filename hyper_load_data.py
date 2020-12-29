@@ -25,7 +25,7 @@ def read_data(dataset):
         for node in hyper_edge_list[i]:
             hyper_incidence_matrix[node][i] = 1
 
-    print(hyper_incidence_matrix[1700:1900, -1])
+    # print(hyper_incidence_matrix[1700:1900, -1])
 
     hyper_incidence_matrix = sp.coo_matrix(hyper_incidence_matrix)
     hyper_incidence_matrix = normalize(hyper_incidence_matrix).todense()
