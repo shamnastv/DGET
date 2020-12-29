@@ -32,13 +32,17 @@ def read_data(dataset):
     hyper_incidence_matrix = sp.coo_matrix(hyper_incidence_matrix)
     hyper_incidence_matrix = normalize(hyper_incidence_matrix).todense()
 
-    adj = copy.deepcopy(hyper_incidence_matrix)
-    adj[adj > 0] = 1
+    # adj = copy.deepcopy(hyper_incidence_matrix)
+    # adj[adj > 0] = 1
+    #
+    # adj_norm = hyper_incidence_matrix + np.identity(no_of_nodes)
+    # adj_norm = normalize2(adj_norm)
 
-    adj_norm = hyper_incidence_matrix + np.identity(no_of_nodes)
-    adj_norm = normalize2(adj_norm)
+    # return adj_norm, adj_norm, contentset, labelset
 
-    return adj_norm, adj_norm, contentset, labelset
+    hyper_incidence_matrix_norm = copy.deepcopy(hyper_incidence_matrix)
+    hyper_incidence_matrix_norm = normalize_h(hyper_incidence_matrix_norm)
+    return hyper_incidence_matrix, hyper_incidence_matrix_norm, contentset, labelset
 
 
 def normalize2(mx):
@@ -48,6 +52,24 @@ def normalize2(mx):
     r_inv[np.isinf(r_inv)] = 0.
     r_mat_inv = sp.diags(r_inv)
     mx = r_mat_inv.dot(mx)
+    return mx
+
+
+def normalize_h(mx):
+    """Row-normalize sparse matrix"""
+    rowsum = np.array(mx.sum(1))
+    colsum = np.array(mx.sum(0))
+
+    r_inv_sqrt = np.power(rowsum, -0.5).flatten()
+    r_inv_sqrt[np.isinf(r_inv_sqrt)] = 0.
+    r_mat_inv_sqrt = sp.diags(r_inv_sqrt)
+
+    c_inv = np.power(colsum, -0.5).flatten()
+    c_inv[np.isinf(c_inv)] = 0.
+    c_mat_inv = sp.diags(c_inv)
+
+    mx = r_mat_inv_sqrt.dot(mx).dot(c_mat_inv)
+
     return mx
 
 
