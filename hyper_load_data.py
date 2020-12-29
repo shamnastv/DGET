@@ -1,3 +1,4 @@
+import copy
 import pickle
 
 import scipy.sparse as sp
@@ -27,7 +28,10 @@ def read_data(dataset):
     hyper_incidence_matrix = sp.coo_matrix(hyper_incidence_matrix)
     hyper_incidence_matrix = normalize(hyper_incidence_matrix).todense()
 
-    return hyper_incidence_matrix, hyper_incidence_matrix, contentset, labelset
+    adj = copy.deepcopy(hyper_incidence_matrix)
+    adj[adj > 0] = 1
+
+    return adj, hyper_incidence_matrix, contentset, labelset
 
 
 def normalize(mx):
