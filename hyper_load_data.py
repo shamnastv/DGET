@@ -16,7 +16,6 @@ def read_data(dataset):
     with open(content_path, 'rb') as handle:
         contentset = pickle.load(handle).todense()
     hyper_edge_list = list(hyper_graph.values())
-    print(hyper_edge_list)
 
     labelset = np.array(labelset)
     no_of_nodes = labelset.shape[0]
@@ -37,7 +36,7 @@ def read_data(dataset):
     adj_norm = hyper_incidence_matrix + np.identity(no_of_nodes)
     adj_norm = normalize2(adj_norm)
 
-    return adj, adj_norm, contentset, labelset
+    return adj_norm, adj_norm, contentset, labelset
 
 
 def normalize2(mx):
