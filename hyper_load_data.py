@@ -16,6 +16,7 @@ def read_data(dataset):
     with open(content_path, 'rb') as handle:
         contentset = pickle.load(handle).todense()
     hyper_edge_list = list(hyper_graph.values())
+    print(hyper_edge_list)
 
     labelset = np.array(labelset)
     no_of_nodes = labelset.shape[0]
@@ -25,13 +26,28 @@ def read_data(dataset):
         for node in hyper_edge_list[i]:
             hyper_incidence_matrix[node][i] = 1
 
+    print(hyper_incidence_matrix[1700:1900, -1])
+
     hyper_incidence_matrix = sp.coo_matrix(hyper_incidence_matrix)
     hyper_incidence_matrix = normalize(hyper_incidence_matrix).todense()
 
     adj = copy.deepcopy(hyper_incidence_matrix)
     adj[adj > 0] = 1
 
-    return adj, hyper_incidence_matrix, contentset, labelset
+    adj_norm = hyper_incidence_matrix + np.identity(no_of_nodes)
+    adj_norm = normalize2(adj_norm)
+
+    return adj, adj_norm, contentset, labelset
+
+
+def normalize2(mx):
+    """Row-normalize sparse matrix"""
+    rowsum = np.array(mx.sum(1))
+    r_inv = np.power(rowsum, -1).flatten()
+    r_inv[np.isinf(r_inv)] = 0.
+    r_mat_inv = sp.diags(r_inv)
+    mx = r_mat_inv.dot(mx)
+    return mx
 
 
 def normalize(mx):
@@ -54,9 +70,9 @@ def normalize(mx):
 
 def main():
     adj, adj_norm, features, label = read_data('cora')
-    print(adj.shape)
-    print(adj_norm.shape)
-    print(features.shape)
+    print(adj)
+    print(adj_norm)
+    print(features)
     print(label[0:200])
 
 
