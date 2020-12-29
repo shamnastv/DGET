@@ -6,9 +6,9 @@ import numpy as np
 
 
 def read_data(dataset):
-    edgelist_path = './hyper_datasets/' + dataset + '/' + 'hypergraph.pickle'
-    label_path = './hyper_datasets/' + dataset + '/' + 'labels.pickle'
-    content_path = './hyper_datasets/' + dataset + '/' + 'features.pickle'
+    edgelist_path = './hyper_datasets/coauthorship/' + dataset + '/' + 'hypergraph.pickle'
+    label_path = './hyper_datasets/coauthorship/' + dataset + '/' + 'labels.pickle'
+    content_path = './hyper_datasets/coauthorship/' + dataset + '/' + 'features.pickle'
     with open(edgelist_path, 'rb') as handle:
         hyper_graph = pickle.load(handle)
     with open(label_path, 'rb') as handle:
