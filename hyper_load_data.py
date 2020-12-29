@@ -20,7 +20,7 @@ def read_data(dataset):
     labelset = np.array(labelset)
     no_of_nodes = labelset.shape[0]
     no_of_edges = len(hyper_edge_list)
-    hyper_incidence_matrix = np.zeros((no_of_nodes, no_of_edges))
+    hyper_incidence_matrix = np.zeros((no_of_nodes, no_of_edges), dtype=float)
     for i in range(len(hyper_edge_list)):
         for node in hyper_edge_list[i]:
             hyper_incidence_matrix[node][i] = 1
