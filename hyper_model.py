@@ -65,7 +65,7 @@ class DGE(nn.Module):
         #                              nn.Sigmoid(),
         #                              nn.Linear(args.hidden_dim_dec_feat, n))
         # self.adj_dec = nn.Linear(n, n)
-        self.eps = nn.Parameter(torch.zeros(1), requires_grad=True)
+        self.eps = nn.Parameter(torch.ones(1), requires_grad=True)
         self.reset_parameters()
 
     def reset_parameters(self) -> None:
