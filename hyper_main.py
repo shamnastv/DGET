@@ -45,7 +45,7 @@ def test(epoch, model, adj_norm, features, label):
     train_X, test_X, train_y, test_y = train_test_split(mu, label, test_size=1.0 - p, random_state=1234)
     # clf = LinearSVC()
     # clf = RandomForestClassifier(max_depth=2, random_state=0)
-    clf = SVC()
+    clf = SVC(kernel='poly')
     clf.fit(train_X, train_y)
 
     print('Epoch :', epoch)
