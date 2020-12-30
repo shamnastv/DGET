@@ -67,11 +67,11 @@ def normalize_h(mx):
     r_inv_sqrt[np.isinf(r_inv_sqrt)] = 0.
     r_mat_inv_sqrt = sp.diags(r_inv_sqrt)
 
-    c_inv = np.power(colsum, -0.5).flatten()
-    c_inv[np.isinf(c_inv)] = 0.
-    c_mat_inv = sp.diags(c_inv)
+    c_inv_sqrt = np.power(colsum, -0.5).flatten()
+    c_inv_sqrt[np.isinf(c_inv_sqrt)] = 0.
+    c_mat_inv_sqrt = sp.diags(c_inv_sqrt)
 
-    mx = r_mat_inv_sqrt.dot(mx).dot(c_mat_inv)
+    mx = r_mat_inv_sqrt.dot(mx).dot(c_mat_inv_sqrt)
 
     return mx.todense()
 

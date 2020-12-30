@@ -6,4 +6,4 @@
 #SBATCH --gres=gpu:1
 #SBATCH --partition=cl1_48h-1G
 
-python3 hyper_main.py --dataset cora --alpha 500 --weight_decay .0001
+python3 hyper_main.py --dataset cora --alpha 200 --weight_decay .0001
