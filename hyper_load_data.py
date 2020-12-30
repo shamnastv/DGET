@@ -29,22 +29,22 @@ def read_data(dataset):
 
     # print(hyper_incidence_matrix[1700:1900, -1])
 
-    # hyper_incidence_matrix = sp.coo_matrix(hyper_incidence_matrix)
-    # hyper_incidence_matrix = normalize(hyper_incidence_matrix)
+    hyper_incidence_matrix = sp.coo_matrix(hyper_incidence_matrix)
+    adj_norm = normalize(hyper_incidence_matrix)
 
-    # adj = copy.deepcopy(hyper_incidence_matrix)
-    # adj[adj > 0] = 1
-    #
-    # adj_norm = hyper_incidence_matrix + np.identity(no_of_nodes)
-    # adj_norm = normalize2(adj_norm)
+    adj = copy.deepcopy(adj_norm)
+    adj[adj > 0] = 1
 
-    # return adj_norm, adj_norm, contentset, labelset
+    adj_norm = hyper_incidence_matrix + np.identity(no_of_nodes)
+    adj_norm = normalize2(adj_norm)
+
+    return adj, adj_norm, contentset, labelset
 
     # hyper_incidence_matrix_norm = copy.deepcopy(hyper_incidence_matrix) + sp.identity(no_of_nodes)
     # hyper_incidence_matrix_norm = normalize_h(hyper_incidence_matrix_norm).todense()
     # return hyper_incidence_matrix.todense(), hyper_incidence_matrix_norm, contentset, labelset
-    hyper_incidence_matrix_norm = normalize_h(hyper_incidence_matrix)
-    return hyper_incidence_matrix, hyper_incidence_matrix_norm, contentset, labelset
+    # hyper_incidence_matrix_norm = normalize_h(hyper_incidence_matrix)
+    # return hyper_incidence_matrix, hyper_incidence_matrix_norm, contentset, labelset
 
 
 def normalize2(mx):
