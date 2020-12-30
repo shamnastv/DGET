@@ -4,8 +4,8 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 from mlxtend.evaluate import accuracy_score
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import f1_score
+from sklearn.cluster import KMeans
+from sklearn.metrics import f1_score, adjusted_rand_score
 from sklearn.model_selection import train_test_split
 from sklearn.svm import LinearSVC
 
@@ -18,9 +18,9 @@ def total_loss(args, mu, var, adj_logits, feat_logits, adj, features):
 
     n = adj.shape[0]
     pos = torch.sum(adj)
-    pos_weight = (n * n - pos) / pos
-    adj_loss = args.alpha * F.binary_cross_entropy_with_logits(adj_logits, adj, pos_weight=pos_weight)
-    # adj_loss = 10 * F.mse_loss(adj_logits, adj)
+    # pos_weight = (n * n - pos) / pos
+    # adj_loss = args.alpha * F.binary_cross_entropy_with_logits(adj_logits, adj, pos_weight=pos_weight)
+    adj_loss = 10 * F.mse_loss(adj_logits, adj)
 
     feat_loss = F.mse_loss(feat_logits, features)
     # print('Loss : KL:', kl_loss.detach().cpu().item(), ' ADJ :', adj_loss.detach().cpu().item()
@@ -47,6 +47,11 @@ def test(epoch, model, adj_norm, features, label):
     clf = LinearSVC()
     # clf = RandomForestClassifier(max_depth=2, random_state=0)
     clf.fit(train_X, train_y)
+
+    # kmeans = KMeans(n_clusters=len(np.unique(label)), random_state=0)
+    # pred = kmeans.fit_predict(mu)
+    #
+    # print(adjusted_rand_score(label, pred))
 
     print('Epoch :', epoch)
     y_pred = clf.predict(train_X)
