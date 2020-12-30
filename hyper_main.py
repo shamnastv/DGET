@@ -71,7 +71,7 @@ def main():
     parser.add_argument('--hidden_dim_enc_adj', type=int, default=512, help='hidden dimension')
     parser.add_argument('--hidden_dim_enc_feat', type=int, default=512, help='hidden dimension')
     parser.add_argument('--hidden_dim', type=int, default=128, help='hidden dimension')
-    parser.add_argument('--hidden_dim_dec_feat', type=int, default=128, help='hidden dimension')
+    parser.add_argument('--hidden_dim_dec_feat', type=int, default=512, help='hidden dimension')
 
     parser.add_argument('--epochs', type=int, default=3000, help='number of epochs to train (default: 100)')
     parser.add_argument('--lr', type=float, default=1e-3, help='learning rate (default: 1e-4)')
