@@ -32,7 +32,7 @@ def read_data(dataset):
     adj_norm = normalize(hyper_incidence_matrix)
 
     adj = copy.deepcopy(adj_norm)
-    adj[adj > 0] = 1
+    # adj[adj > 0] = 1
 
     # adj_norm = adj_norm + np.identity(no_of_nodes)
     # adj_norm = normalize2(adj_norm)
