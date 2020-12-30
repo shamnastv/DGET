@@ -34,8 +34,8 @@ def read_data(dataset):
     adj = copy.deepcopy(adj_norm)
     adj[adj > 0] = 1
 
-    adj_norm = adj_norm + np.identity(no_of_nodes)
-    adj_norm = normalize2(adj_norm)
+    # adj_norm = adj_norm + np.identity(no_of_nodes)
+    # adj_norm = normalize2(adj_norm)
 
     return adj, adj_norm, contentset, labelset
 
