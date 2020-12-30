@@ -82,7 +82,7 @@ def main():
 
     parser.add_argument('--add_gcn', action="store_true", help='Whether add_gcn')
     parser.add_argument('--alpha', type=float, default=150.0, help='alpha')
-    parser.add_argument('--beta', type=float, default=150.0, help='beta')
+    parser.add_argument('--beta', type=float, default=1.0, help='beta')
 
     args = parser.parse_args()
 
