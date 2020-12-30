@@ -55,7 +55,6 @@ class Encoder(nn.Module):
 class DGE(nn.Module):
     def __init__(self, args, n, dim):
         super(DGE, self).__init__()
-        self.n = n
         self.encoder = Encoder(args, n, dim)
         self.feat_dec = nn.Sequential(nn.Linear(args.hidden_dim, args.hidden_dim_dec_feat),
                                       nn.Sigmoid(),

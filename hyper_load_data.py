@@ -43,8 +43,8 @@ def read_data(dataset):
     # hyper_incidence_matrix_norm = copy.deepcopy(hyper_incidence_matrix) + sp.identity(no_of_nodes)
     # hyper_incidence_matrix_norm = normalize_h(hyper_incidence_matrix_norm).todense()
     # return hyper_incidence_matrix.todense(), hyper_incidence_matrix_norm, contentset, labelset
-
-    return hyper_incidence_matrix, hyper_incidence_matrix, contentset, labelset
+    hyper_incidence_matrix_norm = normalize_h(hyper_incidence_matrix)
+    return hyper_incidence_matrix, hyper_incidence_matrix_norm, contentset, labelset
 
 
 def normalize2(mx):
@@ -59,6 +59,7 @@ def normalize2(mx):
 
 def normalize_h(mx):
     """Row-normalize sparse matrix"""
+    mx = sp.coo_matrix(mx)
     rowsum = np.array(mx.sum(1))
     colsum = np.array(mx.sum(0))
 
@@ -72,7 +73,7 @@ def normalize_h(mx):
 
     mx = r_mat_inv_sqrt.dot(mx).dot(c_mat_inv)
 
-    return mx
+    return mx.todense()
 
 
 def normalize(mx):
