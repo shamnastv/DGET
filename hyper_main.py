@@ -6,7 +6,7 @@ import torch.optim as optim
 from mlxtend.evaluate import accuracy_score
 from sklearn.metrics import f1_score
 from sklearn.model_selection import train_test_split
-from sklearn.svm import LinearSVC
+from sklearn.svm import LinearSVC, SVC
 
 from hyper_load_data import read_data
 from hyper_model import DGE
@@ -43,8 +43,9 @@ def test(epoch, model, adj_norm, features, label):
         mu, _, _, _ = model(adj_norm, features)
     mu = mu.detach().cpu().numpy()
     train_X, test_X, train_y, test_y = train_test_split(mu, label, test_size=1.0 - p, random_state=1234)
-    clf = LinearSVC()
+    # clf = LinearSVC()
     # clf = RandomForestClassifier(max_depth=2, random_state=0)
+    clf = SVC()
     clf.fit(train_X, train_y)
 
     print('Epoch :', epoch)
