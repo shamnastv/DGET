@@ -15,11 +15,11 @@ from hyper_model import DGE
 def total_loss(args, mu, var, adj_logits, feat_logits, adj, features):
     kl_loss = -0.5 * torch.mean(torch.sum(torch.tensor(1).float().to(var.device) + var - mu ** 2 - torch.exp(var), dim=-1))
 
-    # n = adj.shape[0]
-    # pos = torch.sum(adj)
-    # pos_weight = 2 * (n * n - pos) / pos
-    # adj_loss = args.alpha * F.binary_cross_entropy_with_logits(adj_logits, adj, pos_weight=pos_weight)
-    adj_loss = 1000000 * F.mse_loss(adj_logits, adj)
+    n = adj.shape[0]
+    pos = torch.sum(adj)
+    pos_weight = 2 * (n * n - pos) / pos
+    adj_loss = args.alpha * F.binary_cross_entropy_with_logits(adj_logits, adj, pos_weight=pos_weight)
+    # adj_loss = 1000000 * F.mse_loss(adj_logits, adj)
 
     feat_loss = 100 * F.mse_loss(feat_logits, features)
     print('Loss : KL:', kl_loss.detach().cpu().item(), ' ADJ :', adj_loss.detach().cpu().item()
