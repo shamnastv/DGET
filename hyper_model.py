@@ -76,6 +76,6 @@ class DGE(nn.Module):
         var = var * 2
         z = mu + torch.exp(0.5 * var) * torch.randn_like(mu)
         # adj_logit = self.adj_dec(z)
-        adj_logit = self.eps * torch.sigmoid(torch.mm(z, z.t()))
+        adj_logit = self.eps * torch.mm(z, z.t())
         feat_logits = self.feat_dec(z)
         return mu, var, adj_logit, feat_logits
