@@ -66,6 +66,7 @@ class DGE(nn.Module):
         #                              nn.Linear(args.hidden_dim_dec_feat, n))
         # self.adj_dec = nn.Linear(n, n)
         self.eps = nn.Parameter(torch.zeros(1), requires_grad=True)
+        self.reset_parameters()
 
     def reset_parameters(self) -> None:
         nn.init.uniform_(self.eps)
