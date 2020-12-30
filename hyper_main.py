@@ -21,7 +21,7 @@ def total_loss(args, mu, var, adj_logits, feat_logits, adj, features):
     adj_loss = args.alpha * F.binary_cross_entropy_with_logits(adj_logits, adj, pos_weight=pos_weight)
     # adj_loss = 1000000 * F.mse_loss(adj_logits, adj)
 
-    feat_loss = 10 * F.mse_loss(feat_logits, features)
+    feat_loss = 100 * F.mse_loss(feat_logits, features)
     print('Loss : KL:', kl_loss.detach().cpu().item(), ' ADJ :', adj_loss.detach().cpu().item()
           , 'FEAT :', feat_loss.detach().cpu().item())
     return kl_loss + adj_loss + feat_loss
@@ -38,12 +38,12 @@ def train(args, model, optimizer, adj, adj_norm, features):
 
 def test(epoch, model, adj_norm, features, label):
     model.eval()
-    p = .8
+    p = .3
     with torch.no_grad():
         mu, _, _, _ = model(adj_norm, features)
     mu = mu.detach().cpu().numpy()
     train_X, test_X, train_y, test_y = train_test_split(mu, label, test_size=1.0 - p, random_state=1234)
-    clf = LinearSVC(C=100)
+    clf = LinearSVC(C=10)
     # clf = RandomForestClassifier(max_depth=2, random_state=0)
     # clf = SVC(kernel='poly')
     clf.fit(train_X, train_y)
