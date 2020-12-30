@@ -22,7 +22,7 @@ def total_loss(args, mu, var, adj_logits, feat_logits, adj, features):
     adj_loss = args.alpha * F.binary_cross_entropy_with_logits(adj_logits, adj, pos_weight=pos_weight)
     # adj_loss = 10 * F.mse_loss(adj_logits, adj)
 
-    feat_loss = F.mse_loss(feat_logits, features)
+    feat_loss = args.beta * F.mse_loss(feat_logits, features)
     # print('Loss : KL:', kl_loss.detach().cpu().item(), ' ADJ :', adj_loss.detach().cpu().item()
     #       , 'FEAT :', feat_loss.detach().cpu().item())
     return kl_loss + adj_loss + feat_loss
@@ -88,6 +88,7 @@ def main():
 
     parser.add_argument('--add_gcn', action="store_true", help='Whether add_gcn')
     parser.add_argument('--alpha', type=float, default=150.0, help='alpha')
+    parser.add_argument('--beta', type=float, default=10.0, help='alpha')
 
     args = parser.parse_args()
 
