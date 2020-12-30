@@ -40,7 +40,7 @@ def read_data(dataset):
 
     # return adj_norm, adj_norm, contentset, labelset
 
-    hyper_incidence_matrix_norm = copy.deepcopy(hyper_incidence_matrix)
+    hyper_incidence_matrix_norm = copy.deepcopy(hyper_incidence_matrix) + np.identity(no_of_nodes)
     hyper_incidence_matrix_norm = normalize_h(hyper_incidence_matrix_norm).todense()
     return hyper_incidence_matrix.todense(), hyper_incidence_matrix_norm, contentset, labelset
 
