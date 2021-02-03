@@ -1,0 +1,1046 @@
+Namespace(add_gcn=False, alpha=700.0, batch_size=32, beta=1.0, dataset='wiki', device=0, dropout=0.5, epochs=4000, hidden_dim=128, hidden_dim_dec_feat=128, hidden_dim_enc_adj=512, hidden_dim_enc_feat=512, lr=0.001, num_layers=1, seed=0, weight_decay=0.0)
+device :  cuda:0
+Epoch : 20
+Train : Macro:0.0593 Micro:0.2483 Acc:0.2483
+Test : Macro:0.0481 Micro:0.2280 Acc:0.2280
+maxes : 0.04810419122446132 0.22802850356294538 0.22802850356294538
+
+Epoch : 40
+Train : Macro:0.0786 Micro:0.2774 Acc:0.2774
+Test : Macro:0.0645 Micro:0.2512 Acc:0.2512
+maxes : 0.06449527425471316 0.251187648456057 0.251187648456057
+
+Epoch : 60
+Train : Macro:0.1816 Micro:0.3814 Acc:0.3814
+Test : Macro:0.1539 Micro:0.3462 Acc:0.3462
+maxes : 0.1538565825872718 0.34619952494061756 0.34619952494061756
+
+Epoch : 80
+Train : Macro:0.2624 Micro:0.4563 Acc:0.4563
+Test : Macro:0.2461 Micro:0.4299 Acc:0.4299
+maxes : 0.24614040844034785 0.42992874109263657 0.42992874109263657
+
+Epoch : 100
+Train : Macro:0.3295 Micro:0.5257 Acc:0.5257
+Test : Macro:0.3071 Micro:0.4988 Acc:0.4988
+maxes : 0.3070672181166141 0.498812351543943 0.498812351543943
+
+Epoch : 120
+Train : Macro:0.3537 Micro:0.5617 Acc:0.5617
+Test : Macro:0.3331 Micro:0.5243 Acc:0.5243
+maxes : 0.3331293522008571 0.5243467933491687 0.5243467933491687
+
+Epoch : 140
+Train : Macro:0.3736 Micro:0.5950 Acc:0.5950
+Test : Macro:0.3408 Micro:0.5386 Acc:0.5386
+maxes : 0.34077312399128584 0.5385985748218527 0.5385985748218527
+
+Epoch : 160
+Train : Macro:0.3868 Micro:0.6089 Acc:0.6089
+Test : Macro:0.3598 Micro:0.5647 Acc:0.5647
+maxes : 0.35979501699793665 0.5647268408551069 0.5647268408551069
+
+Epoch : 180
+Train : Macro:0.3957 Micro:0.6172 Acc:0.6172
+Test : Macro:0.3789 Micro:0.5837 Acc:0.5837
+maxes : 0.3789488485019825 0.583729216152019 0.583729216152019
+
+Epoch : 200
+Train : Macro:0.4200 Micro:0.6408 Acc:0.6408
+Test : Macro:0.3975 Micro:0.6051 Acc:0.6051
+maxes : 0.39749012633039255 0.6051068883610451 0.6051068883610451
+
+Epoch : 220
+Train : Macro:0.4310 Micro:0.6574 Acc:0.6574
+Test : Macro:0.4075 Micro:0.6158 Acc:0.6158
+maxes : 0.4074815523404633 0.6157957244655582 0.6157957244655582
+
+Epoch : 240
+Train : Macro:0.4312 Micro:0.6588 Acc:0.6588
+Test : Macro:0.4201 Micro:0.6295 Acc:0.6295
+maxes : 0.42012110398875574 0.6294536817102138 0.6294536817102138
+
+Epoch : 260
+Train : Macro:0.4416 Micro:0.6685 Acc:0.6685
+Test : Macro:0.4316 Micro:0.6378 Acc:0.6378
+maxes : 0.431556570910311 0.6377672209026128 0.6377672209026128
+
+Epoch : 280
+Train : Macro:0.4558 Micro:0.6727 Acc:0.6727
+Test : Macro:0.4432 Micro:0.6431 Acc:0.6431
+maxes : 0.44319063233708783 0.6431116389548693 0.6431116389548693
+
+Epoch : 300
+Train : Macro:0.4777 Micro:0.6838 Acc:0.6838
+Test : Macro:0.4548 Micro:0.6490 Acc:0.6490
+maxes : 0.4548217227041456 0.6490498812351544 0.6490498812351544
+
+Epoch : 320
+Train : Macro:0.4953 Micro:0.7018 Acc:0.7018
+Test : Macro:0.4682 Micro:0.6568 Acc:0.6568
+maxes : 0.46823638409718465 0.6567695961995249 0.6567695961995249
+
+Epoch : 340
+Train : Macro:0.4976 Micro:0.7046 Acc:0.7046
+Test : Macro:0.4764 Micro:0.6651 Acc:0.6651
+maxes : 0.47644047471674444 0.665083135391924 0.665083135391924
+
+Epoch : 360
+Train : Macro:0.5096 Micro:0.7143 Acc:0.7143
+Test : Macro:0.4867 Micro:0.6758 Acc:0.6758
+maxes : 0.48674854520382255 0.6757719714964371 0.6757719714964371
+
+Epoch : 380
+Train : Macro:0.5162 Micro:0.7198 Acc:0.7198
+Test : Macro:0.4989 Micro:0.6823 Acc:0.6823
+maxes : 0.4989099365328644 0.6823040380047506 0.6823040380047506
+
+Epoch : 400
+Train : Macro:0.5219 Micro:0.7254 Acc:0.7254
+Test : Macro:0.5110 Micro:0.6876 Acc:0.6876
+maxes : 0.5110174291029556 0.6876484560570071 0.6876484560570071
+
+Epoch : 420
+Train : Macro:0.5290 Micro:0.7240 Acc:0.7240
+Test : Macro:0.5174 Micro:0.6930 Acc:0.6930
+maxes : 0.5174098686828477 0.6929928741092637 0.6929928741092637
+
+Epoch : 440
+Train : Macro:0.5326 Micro:0.7309 Acc:0.7309
+Test : Macro:0.5218 Micro:0.6942 Acc:0.6942
+maxes : 0.521822894914262 0.6941805225653207 0.6941805225653207
+
+Epoch : 460
+Train : Macro:0.5317 Micro:0.7351 Acc:0.7351
+Test : Macro:0.5279 Micro:0.6977 Acc:0.6977
+maxes : 0.5279171364212 0.6977434679334917 0.6977434679334917
+
+Epoch : 480
+Train : Macro:0.5491 Micro:0.7420 Acc:0.7420
+Test : Macro:0.5403 Micro:0.7067 Acc:0.7067
+maxes : 0.540295309320264 0.7066508313539193 0.7066508313539193
+
+Epoch : 500
+Train : Macro:0.5600 Micro:0.7531 Acc:0.7531
+Test : Macro:0.5427 Micro:0.7108 Acc:0.7108
+maxes : 0.542718733220939 0.7108076009501187 0.7108076009501187
+
+Epoch : 520
+Train : Macro:0.5578 Micro:0.7545 Acc:0.7545
+Test : Macro:0.5451 Micro:0.7114 Acc:0.7114
+maxes : 0.5450811409338625 0.7114014251781473 0.7114014251781473
+
+Epoch : 540
+Train : Macro:0.5620 Micro:0.7587 Acc:0.7587
+Test : Macro:0.5432 Micro:0.7102 Acc:0.7102
+maxes : 0.5450811409338625 0.7114014251781473 0.7114014251781473
+
+Epoch : 560
+Train : Macro:0.5660 Micro:0.7573 Acc:0.7573
+Test : Macro:0.5406 Micro:0.7090 Acc:0.7090
+maxes : 0.5450811409338625 0.7114014251781473 0.7114014251781473
+
+Epoch : 580
+Train : Macro:0.5762 Micro:0.7642 Acc:0.7642
+Test : Macro:0.5489 Micro:0.7114 Acc:0.7114
+maxes : 0.5489137420162901 0.7114014251781473 0.7114014251781473
+
+Epoch : 600
+Train : Macro:0.5761 Micro:0.7656 Acc:0.7656
+Test : Macro:0.5532 Micro:0.7126 Acc:0.7126
+maxes : 0.5532063544009106 0.7125890736342043 0.7125890736342043
+
+Epoch : 620
+Train : Macro:0.5833 Micro:0.7670 Acc:0.7670
+Test : Macro:0.5572 Micro:0.7150 Acc:0.7150
+maxes : 0.5572134810754036 0.7149643705463182 0.7149643705463183
+
+Epoch : 640
+Train : Macro:0.5932 Micro:0.7712 Acc:0.7712
+Test : Macro:0.5567 Micro:0.7144 Acc:0.7144
+maxes : 0.5572134810754036 0.7149643705463182 0.7149643705463183
+
+Epoch : 660
+Train : Macro:0.5963 Micro:0.7712 Acc:0.7712
+Test : Macro:0.5593 Micro:0.7150 Acc:0.7150
+maxes : 0.5593362888698106 0.7149643705463182 0.7149643705463183
+
+Epoch : 680
+Train : Macro:0.6024 Micro:0.7725 Acc:0.7725
+Test : Macro:0.5615 Micro:0.7150 Acc:0.7150
+maxes : 0.561453178926386 0.7149643705463182 0.7149643705463183
+
+Epoch : 700
+Train : Macro:0.6010 Micro:0.7712 Acc:0.7712
+Test : Macro:0.5593 Micro:0.7132 Acc:0.7132
+maxes : 0.561453178926386 0.7149643705463182 0.7149643705463183
+
+Epoch : 720
+Train : Macro:0.6083 Micro:0.7725 Acc:0.7725
+Test : Macro:0.5616 Micro:0.7138 Acc:0.7138
+maxes : 0.5615911122862132 0.7149643705463182 0.7149643705463183
+
+Epoch : 740
+Train : Macro:0.6107 Micro:0.7725 Acc:0.7725
+Test : Macro:0.5630 Micro:0.7144 Acc:0.7144
+maxes : 0.5629995173352396 0.7149643705463182 0.7149643705463183
+
+Epoch : 760
+Train : Macro:0.6126 Micro:0.7753 Acc:0.7753
+Test : Macro:0.5639 Micro:0.7167 Acc:0.7167
+maxes : 0.5639188114568756 0.7167458432304038 0.7167458432304038
+
+Epoch : 780
+Train : Macro:0.6164 Micro:0.7795 Acc:0.7795
+Test : Macro:0.5718 Micro:0.7215 Acc:0.7215
+maxes : 0.5718480747008735 0.7214964370546318 0.7214964370546318
+
+Epoch : 800
+Train : Macro:0.6163 Micro:0.7809 Acc:0.7809
+Test : Macro:0.5748 Micro:0.7233 Acc:0.7233
+maxes : 0.5747877444907667 0.7232779097387173 0.7232779097387173
+
+Epoch : 820
+Train : Macro:0.6186 Micro:0.7809 Acc:0.7809
+Test : Macro:0.5729 Micro:0.7233 Acc:0.7233
+maxes : 0.5747877444907667 0.7232779097387173 0.7232779097387173
+
+Epoch : 840
+Train : Macro:0.6188 Micro:0.7822 Acc:0.7822
+Test : Macro:0.5719 Micro:0.7239 Acc:0.7239
+maxes : 0.5747877444907667 0.7238717339667458 0.7238717339667459
+
+Epoch : 860
+Train : Macro:0.6185 Micro:0.7822 Acc:0.7822
+Test : Macro:0.5891 Micro:0.7257 Acc:0.7257
+maxes : 0.589052911119937 0.7256532066508313 0.7256532066508313
+
+Epoch : 880
+Train : Macro:0.6179 Micro:0.7822 Acc:0.7822
+Test : Macro:0.5942 Micro:0.7280 Acc:0.7280
+maxes : 0.5941557725418591 0.7280285035629454 0.7280285035629454
+
+Epoch : 900
+Train : Macro:0.6396 Micro:0.7822 Acc:0.7822
+Test : Macro:0.5958 Micro:0.7286 Acc:0.7286
+maxes : 0.5958339215978965 0.7286223277909739 0.7286223277909739
+
+Epoch : 920
+Train : Macro:0.6614 Micro:0.7864 Acc:0.7864
+Test : Macro:0.5934 Micro:0.7286 Acc:0.7286
+maxes : 0.5958339215978965 0.7286223277909739 0.7286223277909739
+
+Epoch : 940
+Train : Macro:0.6623 Micro:0.7864 Acc:0.7864
+Test : Macro:0.5963 Micro:0.7286 Acc:0.7286
+maxes : 0.5962739943372818 0.7286223277909739 0.7286223277909739
+
+Epoch : 960
+Train : Macro:0.6648 Micro:0.7878 Acc:0.7878
+Test : Macro:0.5972 Micro:0.7292 Acc:0.7292
+maxes : 0.5972313399324235 0.7292161520190024 0.7292161520190024
+
+Epoch : 980
+Train : Macro:0.6610 Micro:0.7850 Acc:0.7850
+Test : Macro:0.6118 Micro:0.7322 Acc:0.7322
+maxes : 0.6118242674660008 0.732185273159145 0.732185273159145
+
+Epoch : 1000
+Train : Macro:0.6764 Micro:0.7850 Acc:0.7850
+Test : Macro:0.6136 Micro:0.7346 Acc:0.7346
+maxes : 0.6136018169469187 0.7345605700712589 0.7345605700712589
+
+Epoch : 1020
+Train : Macro:0.6774 Micro:0.7864 Acc:0.7864
+Test : Macro:0.6128 Micro:0.7334 Acc:0.7334
+maxes : 0.6136018169469187 0.7345605700712589 0.7345605700712589
+
+Epoch : 1040
+Train : Macro:0.6995 Micro:0.7947 Acc:0.7947
+Test : Macro:0.6158 Micro:0.7363 Acc:0.7363
+maxes : 0.6157814606150601 0.7363420427553444 0.7363420427553444
+
+Epoch : 1060
+Train : Macro:0.7101 Micro:0.7961 Acc:0.7961
+Test : Macro:0.6157 Micro:0.7352 Acc:0.7352
+maxes : 0.6157814606150601 0.7363420427553444 0.7363420427553444
+
+Epoch : 1080
+Train : Macro:0.7118 Micro:0.7961 Acc:0.7961
+Test : Macro:0.6172 Micro:0.7363 Acc:0.7363
+maxes : 0.6171504307503256 0.7363420427553444 0.7363420427553444
+
+Epoch : 1100
+Train : Macro:0.7118 Micro:0.7961 Acc:0.7961
+Test : Macro:0.6186 Micro:0.7375 Acc:0.7375
+maxes : 0.618563933744291 0.7375296912114016 0.7375296912114014
+
+Epoch : 1120
+Train : Macro:0.7170 Micro:0.8003 Acc:0.8003
+Test : Macro:0.6210 Micro:0.7405 Acc:0.7405
+maxes : 0.6210279446709827 0.740498812351544 0.7404988123515439
+
+Epoch : 1140
+Train : Macro:0.7235 Micro:0.8058 Acc:0.8058
+Test : Macro:0.6240 Micro:0.7411 Acc:0.7411
+maxes : 0.6240341511008998 0.7410926365795725 0.7410926365795725
+
+Epoch : 1160
+Train : Macro:0.7239 Micro:0.8072 Acc:0.8072
+Test : Macro:0.6140 Micro:0.7411 Acc:0.7411
+maxes : 0.6240341511008998 0.7410926365795725 0.7410926365795725
+
+Epoch : 1180
+Train : Macro:0.7283 Micro:0.8100 Acc:0.8100
+Test : Macro:0.6145 Micro:0.7417 Acc:0.7417
+maxes : 0.6240341511008998 0.7416864608076009 0.7416864608076009
+
+Epoch : 1200
+Train : Macro:0.7337 Micro:0.8128 Acc:0.8128
+Test : Macro:0.6118 Micro:0.7405 Acc:0.7405
+maxes : 0.6240341511008998 0.7416864608076009 0.7416864608076009
+
+Epoch : 1220
+Train : Macro:0.7360 Micro:0.8155 Acc:0.8155
+Test : Macro:0.6103 Micro:0.7387 Acc:0.7387
+maxes : 0.6240341511008998 0.7416864608076009 0.7416864608076009
+
+Epoch : 1240
+Train : Macro:0.7359 Micro:0.8155 Acc:0.8155
+Test : Macro:0.6099 Micro:0.7387 Acc:0.7387
+maxes : 0.6240341511008998 0.7416864608076009 0.7416864608076009
+
+Epoch : 1260
+Train : Macro:0.7365 Micro:0.8169 Acc:0.8169
+Test : Macro:0.6113 Micro:0.7417 Acc:0.7417
+maxes : 0.6240341511008998 0.7416864608076009 0.7416864608076009
+
+Epoch : 1280
+Train : Macro:0.7379 Micro:0.8183 Acc:0.8183
+Test : Macro:0.6112 Micro:0.7411 Acc:0.7411
+maxes : 0.6240341511008998 0.7416864608076009 0.7416864608076009
+
+Epoch : 1300
+Train : Macro:0.7427 Micro:0.8211 Acc:0.8211
+Test : Macro:0.6145 Micro:0.7441 Acc:0.7441
+maxes : 0.6240341511008998 0.744061757719715 0.744061757719715
+
+Epoch : 1320
+Train : Macro:0.7441 Micro:0.8225 Acc:0.8225
+Test : Macro:0.6173 Micro:0.7470 Acc:0.7470
+maxes : 0.6240341511008998 0.7470308788598576 0.7470308788598575
+
+Epoch : 1340
+Train : Macro:0.7434 Micro:0.8211 Acc:0.8211
+Test : Macro:0.6175 Micro:0.7476 Acc:0.7476
+maxes : 0.6240341511008998 0.7476247030878861 0.747624703087886
+
+Epoch : 1360
+Train : Macro:0.7464 Micro:0.8252 Acc:0.8252
+Test : Macro:0.6178 Micro:0.7470 Acc:0.7470
+maxes : 0.6240341511008998 0.7476247030878861 0.747624703087886
+
+Epoch : 1380
+Train : Macro:0.7452 Micro:0.8239 Acc:0.8239
+Test : Macro:0.6187 Micro:0.7482 Acc:0.7482
+maxes : 0.6240341511008998 0.7482185273159146 0.7482185273159145
+
+Epoch : 1400
+Train : Macro:0.7459 Micro:0.8252 Acc:0.8252
+Test : Macro:0.6190 Micro:0.7476 Acc:0.7476
+maxes : 0.6240341511008998 0.7482185273159146 0.7482185273159145
+
+Epoch : 1420
+Train : Macro:0.7447 Micro:0.8225 Acc:0.8225
+Test : Macro:0.6196 Micro:0.7476 Acc:0.7476
+maxes : 0.6240341511008998 0.7482185273159146 0.7482185273159145
+
+Epoch : 1440
+Train : Macro:0.7455 Micro:0.8252 Acc:0.8252
+Test : Macro:0.6220 Micro:0.7494 Acc:0.7494
+maxes : 0.6240341511008998 0.7494061757719715 0.7494061757719715
+
+Epoch : 1460
+Train : Macro:0.7441 Micro:0.8239 Acc:0.8239
+Test : Macro:0.6226 Micro:0.7500 Acc:0.7500
+maxes : 0.6240341511008998 0.75 0.75
+
+Epoch : 1480
+Train : Macro:0.7440 Micro:0.8239 Acc:0.8239
+Test : Macro:0.6397 Micro:0.7536 Acc:0.7536
+maxes : 0.6397289089838171 0.753562945368171 0.753562945368171
+
+Epoch : 1500
+Train : Macro:0.7456 Micro:0.8252 Acc:0.8252
+Test : Macro:0.6416 Micro:0.7553 Acc:0.7553
+maxes : 0.6416443840865206 0.7553444180522564 0.7553444180522565
+
+Epoch : 1520
+Train : Macro:0.7466 Micro:0.8266 Acc:0.8266
+Test : Macro:0.6405 Micro:0.7542 Acc:0.7542
+maxes : 0.6416443840865206 0.7553444180522564 0.7553444180522565
+
+Epoch : 1540
+Train : Macro:0.7504 Micro:0.8308 Acc:0.8308
+Test : Macro:0.6389 Micro:0.7536 Acc:0.7536
+maxes : 0.6416443840865206 0.7553444180522564 0.7553444180522565
+
+Epoch : 1560
+Train : Macro:0.7530 Micro:0.8336 Acc:0.8336
+Test : Macro:0.6392 Micro:0.7542 Acc:0.7542
+maxes : 0.6416443840865206 0.7553444180522564 0.7553444180522565
+
+Epoch : 1580
+Train : Macro:0.7521 Micro:0.8336 Acc:0.8336
+Test : Macro:0.6393 Micro:0.7548 Acc:0.7548
+maxes : 0.6416443840865206 0.7553444180522564 0.7553444180522565
+
+Epoch : 1600
+Train : Macro:0.7521 Micro:0.8336 Acc:0.8336
+Test : Macro:0.6396 Micro:0.7577 Acc:0.7577
+maxes : 0.6416443840865206 0.7577197149643704 0.7577197149643705
+
+Epoch : 1620
+Train : Macro:0.7531 Micro:0.8350 Acc:0.8350
+Test : Macro:0.6400 Micro:0.7583 Acc:0.7583
+maxes : 0.6416443840865206 0.7583135391923991 0.7583135391923991
+
+Epoch : 1640
+Train : Macro:0.7504 Micro:0.8336 Acc:0.8336
+Test : Macro:0.6390 Micro:0.7589 Acc:0.7589
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1660
+Train : Macro:0.7504 Micro:0.8336 Acc:0.8336
+Test : Macro:0.6391 Micro:0.7589 Acc:0.7589
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1680
+Train : Macro:0.7537 Micro:0.8363 Acc:0.8363
+Test : Macro:0.6403 Micro:0.7589 Acc:0.7589
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1700
+Train : Macro:0.7495 Micro:0.8350 Acc:0.8350
+Test : Macro:0.6401 Micro:0.7577 Acc:0.7577
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1720
+Train : Macro:0.7486 Micro:0.8350 Acc:0.8350
+Test : Macro:0.6411 Micro:0.7577 Acc:0.7577
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1740
+Train : Macro:0.7452 Micro:0.8336 Acc:0.8336
+Test : Macro:0.6411 Micro:0.7583 Acc:0.7583
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1760
+Train : Macro:0.7529 Micro:0.8377 Acc:0.8377
+Test : Macro:0.6390 Micro:0.7565 Acc:0.7565
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1780
+Train : Macro:0.7508 Micro:0.8350 Acc:0.8350
+Test : Macro:0.6359 Micro:0.7542 Acc:0.7542
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1800
+Train : Macro:0.7516 Micro:0.8350 Acc:0.8350
+Test : Macro:0.6364 Micro:0.7548 Acc:0.7548
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1820
+Train : Macro:0.7512 Micro:0.8350 Acc:0.8350
+Test : Macro:0.6379 Micro:0.7553 Acc:0.7553
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1840
+Train : Macro:0.7533 Micro:0.8377 Acc:0.8377
+Test : Macro:0.6367 Micro:0.7548 Acc:0.7548
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1860
+Train : Macro:0.7572 Micro:0.8419 Acc:0.8419
+Test : Macro:0.6359 Micro:0.7542 Acc:0.7542
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1880
+Train : Macro:0.7618 Micro:0.8447 Acc:0.8447
+Test : Macro:0.6362 Micro:0.7548 Acc:0.7548
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1900
+Train : Macro:0.7612 Micro:0.8433 Acc:0.8433
+Test : Macro:0.6378 Micro:0.7559 Acc:0.7559
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1920
+Train : Macro:0.7624 Micro:0.8447 Acc:0.8447
+Test : Macro:0.6360 Micro:0.7548 Acc:0.7548
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1940
+Train : Macro:0.7431 Micro:0.8447 Acc:0.8447
+Test : Macro:0.6380 Micro:0.7559 Acc:0.7559
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1960
+Train : Macro:0.7434 Micro:0.8433 Acc:0.8433
+Test : Macro:0.6406 Micro:0.7577 Acc:0.7577
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 1980
+Train : Macro:0.7451 Micro:0.8447 Acc:0.8447
+Test : Macro:0.6394 Micro:0.7559 Acc:0.7559
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 2000
+Train : Macro:0.7461 Micro:0.8447 Acc:0.8447
+Test : Macro:0.6402 Micro:0.7559 Acc:0.7559
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 2020
+Train : Macro:0.7461 Micro:0.8447 Acc:0.8447
+Test : Macro:0.6407 Micro:0.7565 Acc:0.7565
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 2040
+Train : Macro:0.7373 Micro:0.8433 Acc:0.8433
+Test : Macro:0.6406 Micro:0.7553 Acc:0.7553
+maxes : 0.6416443840865206 0.7589073634204275 0.7589073634204275
+
+Epoch : 2060
+Train : Macro:0.7406 Micro:0.8460 Acc:0.8460
+Test : Macro:0.6507 Micro:0.7571 Acc:0.7571
+maxes : 0.650748249061418 0.7589073634204275 0.7589073634204275
+
+Epoch : 2080
+Train : Macro:0.7414 Micro:0.8460 Acc:0.8460
+Test : Macro:0.6401 Micro:0.7565 Acc:0.7565
+maxes : 0.650748249061418 0.7589073634204275 0.7589073634204275
+
+Epoch : 2100
+Train : Macro:0.7396 Micro:0.8447 Acc:0.8447
+Test : Macro:0.6525 Micro:0.7589 Acc:0.7589
+maxes : 0.6524874379151316 0.7589073634204275 0.7589073634204275
+
+Epoch : 2120
+Train : Macro:0.7415 Micro:0.8460 Acc:0.8460
+Test : Macro:0.6527 Micro:0.7607 Acc:0.7607
+maxes : 0.6526902069880532 0.7606888361045131 0.7606888361045131
+
+Epoch : 2140
+Train : Macro:0.7423 Micro:0.8460 Acc:0.8460
+Test : Macro:0.6532 Micro:0.7601 Acc:0.7601
+maxes : 0.6532247594066957 0.7606888361045131 0.7606888361045131
+
+Epoch : 2160
+Train : Macro:0.7439 Micro:0.8488 Acc:0.8488
+Test : Macro:0.6536 Micro:0.7607 Acc:0.7607
+maxes : 0.6536049527785451 0.7606888361045131 0.7606888361045131
+
+Epoch : 2180
+Train : Macro:0.7472 Micro:0.8516 Acc:0.8516
+Test : Macro:0.6534 Micro:0.7607 Acc:0.7607
+maxes : 0.6536049527785451 0.7606888361045131 0.7606888361045131
+
+Epoch : 2200
+Train : Macro:0.7462 Micro:0.8516 Acc:0.8516
+Test : Macro:0.6546 Micro:0.7607 Acc:0.7607
+maxes : 0.6545794394744924 0.7606888361045131 0.7606888361045131
+
+Epoch : 2220
+Train : Macro:0.7506 Micro:0.8558 Acc:0.8558
+Test : Macro:0.6565 Micro:0.7625 Acc:0.7625
+maxes : 0.6565439920005841 0.7624703087885987 0.7624703087885986
+
+Epoch : 2240
+Train : Macro:0.7475 Micro:0.8530 Acc:0.8530
+Test : Macro:0.6573 Micro:0.7631 Acc:0.7631
+maxes : 0.6573080808814022 0.7630641330166271 0.7630641330166271
+
+Epoch : 2260
+Train : Macro:0.7509 Micro:0.8558 Acc:0.8558
+Test : Macro:0.6553 Micro:0.7619 Acc:0.7619
+maxes : 0.6573080808814022 0.7630641330166271 0.7630641330166271
+
+Epoch : 2280
+Train : Macro:0.7707 Micro:0.8585 Acc:0.8585
+Test : Macro:0.6558 Micro:0.7625 Acc:0.7625
+maxes : 0.6573080808814022 0.7630641330166271 0.7630641330166271
+
+Epoch : 2300
+Train : Macro:0.7709 Micro:0.8585 Acc:0.8585
+Test : Macro:0.6564 Micro:0.7619 Acc:0.7619
+maxes : 0.6573080808814022 0.7630641330166271 0.7630641330166271
+
+Epoch : 2320
+Train : Macro:0.7696 Micro:0.8571 Acc:0.8571
+Test : Macro:0.6600 Micro:0.7666 Acc:0.7666
+maxes : 0.6599663847557578 0.7666270783847982 0.7666270783847982
+
+Epoch : 2340
+Train : Macro:0.7709 Micro:0.8585 Acc:0.8585
+Test : Macro:0.6590 Micro:0.7654 Acc:0.7654
+maxes : 0.6599663847557578 0.7666270783847982 0.7666270783847982
+
+Epoch : 2360
+Train : Macro:0.7707 Micro:0.8585 Acc:0.8585
+Test : Macro:0.6501 Micro:0.7660 Acc:0.7660
+maxes : 0.6599663847557578 0.7666270783847982 0.7666270783847982
+
+Epoch : 2380
+Train : Macro:0.7751 Micro:0.8613 Acc:0.8613
+Test : Macro:0.6484 Micro:0.7637 Acc:0.7637
+maxes : 0.6599663847557578 0.7666270783847982 0.7666270783847982
+
+Epoch : 2400
+Train : Macro:0.7750 Micro:0.8613 Acc:0.8613
+Test : Macro:0.6472 Micro:0.7637 Acc:0.7637
+maxes : 0.6599663847557578 0.7666270783847982 0.7666270783847982
+
+Epoch : 2420
+Train : Macro:0.7786 Micro:0.8641 Acc:0.8641
+Test : Macro:0.6483 Micro:0.7648 Acc:0.7648
+maxes : 0.6599663847557578 0.7666270783847982 0.7666270783847982
+
+Epoch : 2440
+Train : Macro:0.7799 Micro:0.8655 Acc:0.8655
+Test : Macro:0.6470 Micro:0.7643 Acc:0.7643
+maxes : 0.6599663847557578 0.7666270783847982 0.7666270783847982
+
+Epoch : 2460
+Train : Macro:0.7788 Micro:0.8641 Acc:0.8641
+Test : Macro:0.6492 Micro:0.7648 Acc:0.7648
+maxes : 0.6599663847557578 0.7666270783847982 0.7666270783847982
+
+Epoch : 2480
+Train : Macro:0.7781 Micro:0.8655 Acc:0.8655
+Test : Macro:0.6484 Micro:0.7643 Acc:0.7643
+maxes : 0.6599663847557578 0.7666270783847982 0.7666270783847982
+
+Epoch : 2500
+Train : Macro:0.7774 Micro:0.8641 Acc:0.8641
+Test : Macro:0.6481 Micro:0.7643 Acc:0.7643
+maxes : 0.6599663847557578 0.7666270783847982 0.7666270783847982
+
+Epoch : 2520
+Train : Macro:0.7751 Micro:0.8613 Acc:0.8613
+Test : Macro:0.6554 Micro:0.7637 Acc:0.7637
+maxes : 0.6599663847557578 0.7666270783847982 0.7666270783847982
+
+Epoch : 2540
+Train : Macro:0.7751 Micro:0.8613 Acc:0.8613
+Test : Macro:0.6441 Micro:0.7631 Acc:0.7631
+maxes : 0.6599663847557578 0.7666270783847982 0.7666270783847982
+
+Epoch : 2560
+Train : Macro:0.7739 Micro:0.8627 Acc:0.8627
+Test : Macro:0.6731 Micro:0.7631 Acc:0.7631
+maxes : 0.6730981517401057 0.7666270783847982 0.7666270783847982
+
+Epoch : 2580
+Train : Macro:0.7741 Micro:0.8613 Acc:0.8613
+Test : Macro:0.6771 Micro:0.7637 Acc:0.7637
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2600
+Train : Macro:0.7758 Micro:0.8627 Acc:0.8627
+Test : Macro:0.6735 Micro:0.7637 Acc:0.7637
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2620
+Train : Macro:0.7764 Micro:0.8641 Acc:0.8641
+Test : Macro:0.6663 Micro:0.7637 Acc:0.7637
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2640
+Train : Macro:0.7764 Micro:0.8641 Acc:0.8641
+Test : Macro:0.6759 Micro:0.7643 Acc:0.7643
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2660
+Train : Macro:0.7740 Micro:0.8613 Acc:0.8613
+Test : Macro:0.6753 Micro:0.7654 Acc:0.7654
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2680
+Train : Macro:0.7739 Micro:0.8599 Acc:0.8599
+Test : Macro:0.6748 Micro:0.7637 Acc:0.7637
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2700
+Train : Macro:0.7734 Micro:0.8585 Acc:0.8585
+Test : Macro:0.6736 Micro:0.7643 Acc:0.7643
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2720
+Train : Macro:0.7729 Micro:0.8585 Acc:0.8585
+Test : Macro:0.6728 Micro:0.7619 Acc:0.7619
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2740
+Train : Macro:0.7735 Micro:0.8599 Acc:0.8599
+Test : Macro:0.6741 Micro:0.7631 Acc:0.7631
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2760
+Train : Macro:0.7723 Micro:0.8585 Acc:0.8585
+Test : Macro:0.6742 Micro:0.7643 Acc:0.7643
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2780
+Train : Macro:0.7724 Micro:0.8571 Acc:0.8571
+Test : Macro:0.6735 Micro:0.7637 Acc:0.7637
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2800
+Train : Macro:0.7706 Micro:0.8571 Acc:0.8571
+Test : Macro:0.6724 Micro:0.7625 Acc:0.7625
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2820
+Train : Macro:0.7723 Micro:0.8585 Acc:0.8585
+Test : Macro:0.6697 Micro:0.7625 Acc:0.7625
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2840
+Train : Macro:0.7707 Micro:0.8585 Acc:0.8585
+Test : Macro:0.6712 Micro:0.7643 Acc:0.7643
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2860
+Train : Macro:0.7719 Micro:0.8571 Acc:0.8571
+Test : Macro:0.6715 Micro:0.7631 Acc:0.7631
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2880
+Train : Macro:0.7711 Micro:0.8571 Acc:0.8571
+Test : Macro:0.6730 Micro:0.7625 Acc:0.7625
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2900
+Train : Macro:0.7702 Micro:0.8571 Acc:0.8571
+Test : Macro:0.6751 Micro:0.7637 Acc:0.7637
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2920
+Train : Macro:0.7697 Micro:0.8558 Acc:0.8558
+Test : Macro:0.6727 Micro:0.7619 Acc:0.7619
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2940
+Train : Macro:0.7699 Micro:0.8571 Acc:0.8571
+Test : Macro:0.6720 Micro:0.7631 Acc:0.7631
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2960
+Train : Macro:0.7694 Micro:0.8558 Acc:0.8558
+Test : Macro:0.6709 Micro:0.7625 Acc:0.7625
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 2980
+Train : Macro:0.7747 Micro:0.8599 Acc:0.8599
+Test : Macro:0.6732 Micro:0.7625 Acc:0.7625
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 3000
+Train : Macro:0.7883 Micro:0.8585 Acc:0.8585
+Test : Macro:0.6703 Micro:0.7619 Acc:0.7619
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 3020
+Train : Macro:0.7888 Micro:0.8599 Acc:0.8599
+Test : Macro:0.6709 Micro:0.7613 Acc:0.7613
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 3040
+Train : Macro:0.7930 Micro:0.8613 Acc:0.8613
+Test : Macro:0.6697 Micro:0.7613 Acc:0.7613
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 3060
+Train : Macro:0.7923 Micro:0.8613 Acc:0.8613
+Test : Macro:0.6750 Micro:0.7619 Acc:0.7619
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 3080
+Train : Macro:0.7943 Micro:0.8627 Acc:0.8627
+Test : Macro:0.6769 Micro:0.7631 Acc:0.7631
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 3100
+Train : Macro:0.7943 Micro:0.8627 Acc:0.8627
+Test : Macro:0.6760 Micro:0.7625 Acc:0.7625
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 3120
+Train : Macro:0.7947 Micro:0.8627 Acc:0.8627
+Test : Macro:0.6733 Micro:0.7613 Acc:0.7613
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 3140
+Train : Macro:0.7945 Micro:0.8613 Acc:0.8613
+Test : Macro:0.6728 Micro:0.7613 Acc:0.7613
+maxes : 0.6770915533224737 0.7666270783847982 0.7666270783847982
+
+Epoch : 3160
+Train : Macro:0.7951 Micro:0.8627 Acc:0.8627
+Test : Macro:0.6892 Micro:0.7619 Acc:0.7619
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3180
+Train : Macro:0.7947 Micro:0.8627 Acc:0.8627
+Test : Macro:0.6875 Micro:0.7613 Acc:0.7613
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3200
+Train : Macro:0.7950 Micro:0.8627 Acc:0.8627
+Test : Macro:0.6870 Micro:0.7613 Acc:0.7613
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3220
+Train : Macro:0.7950 Micro:0.8627 Acc:0.8627
+Test : Macro:0.6856 Micro:0.7607 Acc:0.7607
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3240
+Train : Macro:0.7950 Micro:0.8627 Acc:0.8627
+Test : Macro:0.6877 Micro:0.7625 Acc:0.7625
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3260
+Train : Macro:0.7950 Micro:0.8627 Acc:0.8627
+Test : Macro:0.6852 Micro:0.7619 Acc:0.7619
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3280
+Train : Macro:0.7950 Micro:0.8627 Acc:0.8627
+Test : Macro:0.6878 Micro:0.7613 Acc:0.7613
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3300
+Train : Macro:0.7957 Micro:0.8641 Acc:0.8641
+Test : Macro:0.6890 Micro:0.7619 Acc:0.7619
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3320
+Train : Macro:0.7965 Micro:0.8655 Acc:0.8655
+Test : Macro:0.6875 Micro:0.7607 Acc:0.7607
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3340
+Train : Macro:0.7979 Micro:0.8655 Acc:0.8655
+Test : Macro:0.6831 Micro:0.7595 Acc:0.7595
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3360
+Train : Macro:0.7968 Micro:0.8641 Acc:0.8641
+Test : Macro:0.6835 Micro:0.7601 Acc:0.7601
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3380
+Train : Macro:0.7980 Micro:0.8655 Acc:0.8655
+Test : Macro:0.6841 Micro:0.7607 Acc:0.7607
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3400
+Train : Macro:0.7992 Micro:0.8669 Acc:0.8669
+Test : Macro:0.6862 Micro:0.7607 Acc:0.7607
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3420
+Train : Macro:0.7997 Micro:0.8669 Acc:0.8669
+Test : Macro:0.6849 Micro:0.7589 Acc:0.7589
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3440
+Train : Macro:0.7992 Micro:0.8669 Acc:0.8669
+Test : Macro:0.6825 Micro:0.7583 Acc:0.7583
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3460
+Train : Macro:0.8045 Micro:0.8696 Acc:0.8696
+Test : Macro:0.6860 Micro:0.7589 Acc:0.7589
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3480
+Train : Macro:0.7997 Micro:0.8669 Acc:0.8669
+Test : Macro:0.6868 Micro:0.7583 Acc:0.7583
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3500
+Train : Macro:0.7962 Micro:0.8641 Acc:0.8641
+Test : Macro:0.6841 Micro:0.7607 Acc:0.7607
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3520
+Train : Macro:0.7971 Micro:0.8655 Acc:0.8655
+Test : Macro:0.6816 Micro:0.7601 Acc:0.7601
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3540
+Train : Macro:0.7990 Micro:0.8669 Acc:0.8669
+Test : Macro:0.6809 Micro:0.7595 Acc:0.7595
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3560
+Train : Macro:0.7962 Micro:0.8641 Acc:0.8641
+Test : Macro:0.6828 Micro:0.7583 Acc:0.7583
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3580
+Train : Macro:0.7993 Micro:0.8655 Acc:0.8655
+Test : Macro:0.6857 Micro:0.7601 Acc:0.7601
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3600
+Train : Macro:0.8018 Micro:0.8682 Acc:0.8682
+Test : Macro:0.6825 Micro:0.7589 Acc:0.7589
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3620
+Train : Macro:0.8002 Micro:0.8655 Acc:0.8655
+Test : Macro:0.6886 Micro:0.7619 Acc:0.7619
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3640
+Train : Macro:0.7998 Micro:0.8655 Acc:0.8655
+Test : Macro:0.6840 Micro:0.7607 Acc:0.7607
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3660
+Train : Macro:0.7994 Micro:0.8669 Acc:0.8669
+Test : Macro:0.6841 Micro:0.7607 Acc:0.7607
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3680
+Train : Macro:0.8005 Micro:0.8669 Acc:0.8669
+Test : Macro:0.6828 Micro:0.7601 Acc:0.7601
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3700
+Train : Macro:0.7986 Micro:0.8655 Acc:0.8655
+Test : Macro:0.6863 Micro:0.7595 Acc:0.7595
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3720
+Train : Macro:0.8026 Micro:0.8682 Acc:0.8682
+Test : Macro:0.6875 Micro:0.7595 Acc:0.7595
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3740
+Train : Macro:0.7993 Micro:0.8669 Acc:0.8669
+Test : Macro:0.6795 Micro:0.7577 Acc:0.7577
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3760
+Train : Macro:0.8008 Micro:0.8682 Acc:0.8682
+Test : Macro:0.6857 Micro:0.7577 Acc:0.7577
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3780
+Train : Macro:0.8012 Micro:0.8682 Acc:0.8682
+Test : Macro:0.6787 Micro:0.7577 Acc:0.7577
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3800
+Train : Macro:0.8014 Micro:0.8682 Acc:0.8682
+Test : Macro:0.6789 Micro:0.7571 Acc:0.7571
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3820
+Train : Macro:0.7992 Micro:0.8655 Acc:0.8655
+Test : Macro:0.6811 Micro:0.7559 Acc:0.7559
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3840
+Train : Macro:0.7993 Micro:0.8682 Acc:0.8682
+Test : Macro:0.6842 Micro:0.7571 Acc:0.7571
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3860
+Train : Macro:0.8028 Micro:0.8696 Acc:0.8696
+Test : Macro:0.6854 Micro:0.7565 Acc:0.7565
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3880
+Train : Macro:0.7980 Micro:0.8655 Acc:0.8655
+Test : Macro:0.6770 Micro:0.7565 Acc:0.7565
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3900
+Train : Macro:0.7984 Micro:0.8669 Acc:0.8669
+Test : Macro:0.6782 Micro:0.7559 Acc:0.7559
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3920
+Train : Macro:0.8001 Micro:0.8669 Acc:0.8669
+Test : Macro:0.6741 Micro:0.7548 Acc:0.7548
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3940
+Train : Macro:0.7999 Micro:0.8655 Acc:0.8655
+Test : Macro:0.6750 Micro:0.7559 Acc:0.7559
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3960
+Train : Macro:0.7999 Micro:0.8682 Acc:0.8682
+Test : Macro:0.6855 Micro:0.7583 Acc:0.7583
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 3980
+Train : Macro:0.7975 Micro:0.8627 Acc:0.8627
+Test : Macro:0.6769 Micro:0.7577 Acc:0.7577
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+Epoch : 4000
+Train : Macro:0.8013 Micro:0.8669 Acc:0.8669
+Test : Macro:0.6768 Micro:0.7583 Acc:0.7583
+maxes : 0.689219095954002 0.7666270783847982 0.7666270783847982
+
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/home/shamnast/.local/lib/python3.6/site-packages/sklearn/svm/_base.py:977: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
